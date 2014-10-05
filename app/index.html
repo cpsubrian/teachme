@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teach Me Something: Example App</title>
+    <meta name="description" content="A look at Views in Marionette.js">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <section id="main"></section>
+    <script src="vendor/require.js"></script>
+    <script src="js/config.js"></script>
+    <script>
+      require(['jquery', 'boot'], function ($, app) {
+        $(function () {
+          app.start();
+        });
+      });
+    </script>
+  </body>
+</html>

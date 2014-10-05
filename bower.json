@@ -1,0 +1,20 @@
+{
+  "name": "teachme",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "https://github.com/cpsubrian/teachme",
+  "authors": [
+    "Brian Link <cpsubrian@gmail.com>"
+  ],
+  "description": "A look at Views in Marionette.js",
+  "license": "MIT",
+  "dependencies": {
+    "marionette": "~2.2.1",
+    "handlebars": "~2.0.0",
+    "requirejs": "~2.1.15",
+    "requirejs-hbs": "~0.1.1",
+    "fontawesome": "~4.2.0",
+    "normalize.css": "~3.0.2",
+    "requirejs-text": "~2.0.12"
+  }
+}
