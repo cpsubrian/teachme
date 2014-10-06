@@ -13,6 +13,7 @@ requirejs.config({
     'hbs': '../vendor/hbs',
 
     // Stuff outside /js directory.
+    'data': '../data',
     'templates': '../templates',
   },
   shim: {

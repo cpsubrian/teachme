@@ -10,36 +10,14 @@ define(function (require) {
 
   // Create global collections.
   app.teams = {
-    friendly: new Backbone.Collection([
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-    ]),
-    enemy: new Backbone.Collection([
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-      {name: 'Froggen', champion: 'anivia'},
-    ])
+    friendly: new Backbone.Collection(require('data/team_friendly')),
+    enemy: new Backbone.Collection(require('data/team_enemy'))
   };
   app.bans = {
-    friendly: new Backbone.Collection([
-      {champion: 'Teemo'},
-      {champion: 'Teemo'},
-      {champion: 'Teemo'},
-    ]),
-    enemy: new Backbone.Collection([
-      {champion: 'Teemo'},
-      {champion: 'Teemo'},
-      {champion: 'Teemo'},
-    ])
+    friendly: new Backbone.Collection(require('data/bans_friendly')),
+    enemy: new Backbone.Collection(require('data/bans_enemy'))
   };
-  app.chats = new Backbone.Collection([
-    {name: 'Froggen', msg: 'Mid!'}
-  ]);
+  app.chats = new Backbone.Collection(require('data/chats'));
   app.champions = new Backbone.Collection([]);
 
   // Create the main layout view on app start.
