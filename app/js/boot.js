@@ -1,7 +1,8 @@
 define(function (require) {
   var app = require('app')
     , Backbone = require('backbone')
-    , LayoutView = require('views/layout_view');
+    , LayoutView = require('views/layout_view')
+    , ChampionsCollection = require('collections/champions_collection');
 
   // Define app regions.
   app.addRegions({
@@ -9,6 +10,7 @@ define(function (require) {
   });
 
   // Create global collections.
+  app.champions = new ChampionsCollection(require('data/champions'));
   app.teams = {
     friendly: new Backbone.Collection(require('data/team_friendly')),
     enemy: new Backbone.Collection(require('data/team_enemy'))
@@ -18,7 +20,15 @@ define(function (require) {
     enemy: new Backbone.Collection(require('data/bans_enemy'))
   };
   app.chats = new Backbone.Collection(require('data/chats'));
-  app.champions = new Backbone.Collection([]);
+
+  // Define api variables.
+  app.api = {
+    cdn: 'http://ddragon.leagueoflegends.com/cdn',
+    version: '4.18.1',
+    spriteUrl: function (sprite) {
+      return app.api.cdn + '/' + app.api.version + '/img/sprite/' + sprite;
+    },
+  };
 
   // Create the main layout view on app start.
   app.addInitializer(function () {

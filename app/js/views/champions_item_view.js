@@ -1,8 +1,15 @@
 define(function (require) {
-  var Marionette = require('marionette');
+  var app = require('app')
+    , Marionette = require('marionette');
 
   var ChampionsItemView = Marionette.ItemView.extend({
-    template: require('hbs!templates/champions_item')
+    tagName: 'li',
+    template: require('hbs!templates/champions_item'),
+    templateHelpers: function () {
+      var data = this.model.toJSON();
+      data.image.spriteUrl = app.api.spriteUrl(data.image.sprite);
+      return data;
+    }
   });
 
   return ChampionsItemView;

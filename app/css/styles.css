@@ -1,3 +1,5 @@
+/* General
+ ******************************************************************************/
 body {
   background: #333;
   color: #eee;
@@ -8,6 +10,11 @@ section {
 }
 * {
   box-sizing: border-box;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Layout
@@ -49,5 +56,30 @@ body,
   flex: 1 1 auto;
 }
 
- /* Layout
+ /* Champions
  ******************************************************************************/
+.champions {
+  overflow: auto;
+}
+.champions ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.champions ul li {
+  margin-bottom: 5px;
+}
+.champions .champion {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.champions .champion:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 20px rgba(255, 255, 255, 0.6);
+}
