@@ -19,9 +19,9 @@ define(function (require) {
       status: '.status',
       champions: '.champions',
       playerOptions: '.player-options',
-      bansFriendly: '.bans-friendly',
-      bansEnemy: '.bans-enemy',
-      chat: '.chat'
+      bansFriendly: '.bans-friendly .region',
+      bansEnemy: '.bans-enemy .region',
+      chat: '.chat .region'
     },
 
     onRender: function () {

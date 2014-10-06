@@ -22,6 +22,9 @@ ul, li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
+.box.dark {
+  background: rgba(0, 0, 0, 0.8);
+}
 .box.active {
   color: #fff;
   background: linear-gradient(to bottom, rgba(0,173,255,0.55) 0%,rgba(0,173,255,0.3) 100%);
@@ -32,6 +35,19 @@ ul, li {
 }
 .box.inactive {
   color: #777;
+}
+.box h3 {
+  background: linear-gradient(to bottom, rgba(0,173,255,0.35) 0%,rgba(0,173,255,0.2) 100%);
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 5px 10px;
+  margin: -5px -5px 0 -5px;
+  line-height: 1em;
+  color: rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 /* Layout
@@ -65,6 +81,7 @@ body,
 .bottom {
   flex: 1;
   z-index: 2;
+  margin-bottom: 5px;
 }
 .team,
 .bans {
@@ -75,6 +92,15 @@ body,
   display: flex;
   flex-direction: column;
   width: 60%;
+}
+.chat {
+  margin: 0 5px;
+}
+.bans-friendly {
+  margin-left: 10px;
+}
+.bans-enemy {
+  margin-right: 10px;
 }
 .middle .champions {
   flex: 1 1 auto;
@@ -92,7 +118,7 @@ body,
   background: #111 url(../images/background.png) center center;
   background-size: cover;
   -webkit-filter: blur(5px);
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 1;
 }
 
@@ -139,10 +165,12 @@ body,
   display: block;
   width: 48px;
   height: 48px;
+  transition: 150ms;
 }
 .champions .champion:hover {
   cursor: pointer;
   box-shadow: inset 1px 1px 20px rgba(255, 255, 255, 0.6);
+  border-color: #FFA14D;
 }
 
 /* Teams
@@ -185,5 +213,69 @@ body,
 .player .name {
   text-align: center;
   font-size: 0.8em;
+}
+
+/* Bans
+ ******************************************************************************/
+.bans ul {
+  margin: 5px;
+}
+.bans li {
+  margin-bottom: 5px;
+}
+.bans li .champion {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+.bans li .champion .image {
+  display: block;
+  width: 48px;
+  height: 48px;
+  transform: scale(0.5) translate(-50%, -50%);
+}
+
+/* Bans
+ ******************************************************************************/
+.chat {
+  position: relative;
+}
+.chat ul {
+  position: absolute;
+  top: 2em;
+  right: 0;
+  bottom: 2em;
+  left: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}
+.chat li {
+  font-size: 0.9em;
+}
+.chat strong {
+  color: #0595DC;
+  font-weight: normal;
+}
+.chat form {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  padding-right: 100px;
+}
+.chat form input {
+  width: 100%;
+  height: 2em;
+  color: #444;
+}
+.chat form button {
+  width: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2em;
 }
 
