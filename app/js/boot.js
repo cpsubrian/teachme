@@ -27,6 +27,8 @@ define(function (require) {
     image.spriteUrl = app.api.spriteUrl(image.sprite);
     model.set('image', image);
   });
+  // This is a temp. hack to get the flex layout of the champions grid to work.
+  app.champions.add([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]);
   app.teams = {
     friendly: new Backbone.Collection(require('data/team_friendly')),
     enemy: new Backbone.Collection(require('data/team_enemy'))
