@@ -1,6 +1,6 @@
 define(function (require) {
   var app = require('app')
-    , MainLayoutView = require('views/main_layout_view');
+    , LayoutView = require('views/layout_view');
 
   // Define app regions.
   app.addRegions({
@@ -9,7 +9,7 @@ define(function (require) {
 
   // Create the main layout view on app start.
   app.addInitializer(function () {
-    app.mainRegion.show(new MainLayoutView());
+    app.mainRegion.show(new LayoutView());
   });
 
   return app;

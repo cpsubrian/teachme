@@ -7,7 +7,7 @@ define(function (require) {
     , StatusView = require('views/status_view')
     , TeamView = require('views/team_view');
 
-  var MainLayoutView = Marionette.LayoutView.extend({
+  var LayoutView = Marionette.LayoutView.extend({
     tagName: 'section',
     className: 'layout',
     template: require('hbs!templates/layout'),
@@ -51,5 +51,5 @@ define(function (require) {
     }
   });
 
-  return MainLayoutView;
+  return LayoutView;
 });
