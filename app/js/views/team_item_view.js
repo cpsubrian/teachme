@@ -1,8 +1,16 @@
 define(function (require) {
-  var Marionette = require('marionette');
+  var app = require('app')
+    , Marionette = require('marionette');
 
   var TeamItemView = Marionette.ItemView.extend({
-    template: require('hbs!templates/team_item')
+    tagName: 'div',
+    className: 'box player',
+    template: require('hbs!templates/team_item'),
+    templateHelpers: function () {
+      var data = {};
+      data.champion = app.champions.findWhere({key: this.model.get('champion')}).toJSON();
+      return data;
+    }
   });
 
   return TeamItemView;

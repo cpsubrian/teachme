@@ -1,2545 +1,2545 @@
 define(function () {
   return [
     {
-      "id": 412,
-      "title": "the Chain Warden",
-      "name": "Thresh",
-      "image": {
-        "w": 48,
-        "full": "Thresh.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 48
-      },
-      "key": "Thresh",
-      "info": {
-        "defense": 6,
-        "magic": 6,
-        "difficulty": 7,
-        "attack": 5
-      }
-    },
-    {
-      "id": 266,
-      "title": "the Darkin Blade",
-      "name": "Aatrox",
-      "image": {
-        "w": 48,
-        "full": "Aatrox.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 0
-      },
-      "key": "Aatrox",
-      "info": {
-        "defense": 4,
-        "magic": 3,
-        "difficulty": 4,
-        "attack": 8
-      }
-    },
-    {
-      "id": 23,
-      "title": "the Barbarian King",
-      "name": "Tryndamere",
-      "image": {
-        "w": 48,
-        "full": "Tryndamere.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 192
-      },
-      "key": "Tryndamere",
-      "info": {
-        "defense": 5,
-        "magic": 2,
-        "difficulty": 5,
-        "attack": 10
-      }
-    },
-    {
-      "id": 79,
-      "title": "the Rabble Rouser",
-      "name": "Gragas",
-      "image": {
-        "w": 48,
-        "full": "Gragas.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 336
-      },
-      "key": "Gragas",
-      "info": {
-        "defense": 7,
-        "magic": 6,
-        "difficulty": 5,
-        "attack": 4
-      }
-    },
-    {
-      "id": 69,
-      "title": "the Serpent's Embrace",
-      "name": "Cassiopeia",
-      "image": {
-        "w": 48,
-        "full": "Cassiopeia.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 48
-      },
-      "key": "Cassiopeia",
-      "info": {
-        "defense": 3,
-        "magic": 9,
-        "difficulty": 10,
-        "attack": 2
-      }
-    },
-    {
-      "id": 13,
-      "title": "the Rogue Mage",
-      "name": "Ryze",
-      "image": {
-        "w": 48,
-        "full": "Ryze.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 240
-      },
-      "key": "Ryze",
-      "info": {
-        "defense": 2,
-        "magic": 10,
-        "difficulty": 7,
-        "attack": 2
-      }
-    },
-    {
-      "id": 78,
-      "title": "the Iron Ambassador",
-      "name": "Poppy",
-      "image": {
-        "w": 48,
-        "full": "Poppy.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 384
-      },
-      "key": "Poppy",
-      "info": {
-        "defense": 6,
-        "magic": 5,
-        "difficulty": 7,
-        "attack": 6
-      }
-    },
-    {
-      "id": 14,
-      "title": "the Undead Champion",
-      "name": "Sion",
-      "image": {
-        "w": 48,
-        "full": "Sion.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 48
-      },
-      "key": "Sion",
-      "info": {
-        "defense": 8,
-        "magic": 7,
-        "difficulty": 7,
-        "attack": 5
-      }
-    },
-    {
-      "id": 1,
-      "title": "the Dark Child",
-      "name": "Annie",
-      "image": {
-        "w": 48,
-        "full": "Annie.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 288
-      },
-      "key": "Annie",
-      "info": {
-        "defense": 3,
-        "magic": 10,
-        "difficulty": 6,
-        "attack": 2
-      }
-    },
-    {
-      "id": 111,
-      "title": "the Titan of the Depths",
-      "name": "Nautilus",
-      "image": {
-        "w": 48,
-        "full": "Nautilus.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 48
-      },
-      "key": "Nautilus",
-      "info": {
-        "defense": 6,
-        "magic": 6,
-        "difficulty": 6,
-        "attack": 4
-      }
-    },
-    {
-      "id": 43,
-      "title": "the Enlightened One",
-      "name": "Karma",
-      "image": {
-        "w": 48,
-        "full": "Karma.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 288
-      },
-      "key": "Karma",
-      "info": {
-        "defense": 7,
-        "magic": 8,
-        "difficulty": 5,
-        "attack": 1
-      }
-    },
-    {
-      "id": 99,
-      "title": "the Lady of Luminosity",
-      "name": "Lux",
-      "image": {
-        "w": 48,
-        "full": "Lux.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 0
-      },
-      "key": "Lux",
-      "info": {
-        "defense": 4,
-        "magic": 9,
-        "difficulty": 5,
-        "attack": 2
-      }
-    },
-    {
-      "id": 103,
-      "title": "the Nine-Tailed Fox",
-      "name": "Ahri",
-      "image": {
-        "w": 48,
-        "full": "Ahri.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 48
-      },
-      "key": "Ahri",
-      "info": {
-        "defense": 4,
-        "magic": 8,
-        "difficulty": 5,
-        "attack": 3
-      }
-    },
-    {
-      "id": 2,
-      "title": "the Berserker",
-      "name": "Olaf",
-      "image": {
-        "w": 48,
-        "full": "Olaf.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 240
-      },
-      "key": "Olaf",
-      "info": {
-        "defense": 5,
-        "magic": 3,
-        "difficulty": 3,
-        "attack": 9
-      }
-    },
-    {
-      "id": 112,
-      "title": "the Machine Herald",
-      "name": "Viktor",
-      "image": {
-        "w": 48,
-        "full": "Viktor.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 144
-      },
-      "key": "Viktor",
-      "info": {
-        "defense": 4,
-        "magic": 10,
-        "difficulty": 9,
-        "attack": 2
-      }
-    },
-    {
-      "id": 34,
-      "title": "the Cryophoenix",
-      "name": "Anivia",
-      "image": {
-        "w": 48,
-        "full": "Anivia.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 240
-      },
-      "key": "Anivia",
-      "info": {
-        "defense": 4,
-        "magic": 10,
-        "difficulty": 10,
-        "attack": 1
-      }
-    },
-    {
-      "id": 86,
-      "title": "The Might of Demacia",
-      "name": "Garen",
-      "image": {
-        "w": 48,
-        "full": "Garen.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 288
-      },
-      "key": "Garen",
-      "info": {
-        "defense": 7,
-        "magic": 1,
-        "difficulty": 5,
-        "attack": 7
-      }
-    },
-    {
-      "id": 27,
-      "title": "the Mad Chemist",
-      "name": "Singed",
-      "image": {
-        "w": 48,
-        "full": "Singed.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 0
-      },
-      "key": "Singed",
-      "info": {
-        "defense": 8,
-        "magic": 7,
-        "difficulty": 10,
-        "attack": 4
-      }
-    },
-    {
-      "id": 127,
-      "title": "the Ice Witch",
-      "name": "Lissandra",
-      "image": {
-        "w": 48,
-        "full": "Lissandra.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 336
-      },
-      "key": "Lissandra",
-      "info": {
-        "defense": 5,
-        "magic": 8,
-        "difficulty": 6,
-        "attack": 2
-      }
-    },
-    {
-      "id": 57,
-      "title": "the Twisted Treant",
-      "name": "Maokai",
-      "image": {
-        "w": 48,
-        "full": "Maokai.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 144
-      },
-      "key": "Maokai",
-      "info": {
-        "defense": 8,
-        "magic": 6,
-        "difficulty": 3,
-        "attack": 3
-      }
-    },
-    {
-      "id": 25,
-      "title": "Fallen Angel",
-      "name": "Morgana",
-      "image": {
-        "w": 48,
-        "full": "Morgana.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 384
-      },
-      "key": "Morgana",
-      "info": {
-        "defense": 6,
-        "magic": 8,
-        "difficulty": 1,
-        "attack": 1
-      }
-    },
-    {
-      "id": 28,
-      "title": "the Widowmaker",
-      "name": "Evelynn",
-      "image": {
-        "w": 48,
-        "full": "Evelynn.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 432
-      },
-      "key": "Evelynn",
-      "info": {
-        "defense": 2,
-        "magic": 7,
-        "difficulty": 10,
-        "attack": 4
-      }
-    },
-    {
-      "id": 105,
-      "title": "the Tidal Trickster",
-      "name": "Fizz",
-      "image": {
-        "w": 48,
-        "full": "Fizz.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 144
-      },
-      "key": "Fizz",
-      "info": {
-        "defense": 4,
-        "magic": 7,
-        "difficulty": 6,
-        "attack": 6
-      }
-    },
-    {
-      "id": 74,
-      "title": "the Revered Inventor",
-      "name": "Heimerdinger",
-      "image": {
-        "w": 48,
-        "full": "Heimerdinger.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 0
-      },
-      "key": "Heimerdinger",
-      "info": {
-        "defense": 6,
-        "magic": 8,
-        "difficulty": 8,
-        "attack": 2
-      }
-    },
-    {
-      "id": 238,
-      "title": "the Master of Shadows",
-      "name": "Zed",
-      "image": {
-        "w": 48,
-        "full": "Zed.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 48
-      },
-      "key": "Zed",
-      "info": {
-        "defense": 2,
-        "magic": 1,
-        "difficulty": 7,
-        "attack": 9
-      }
-    },
-    {
-      "id": 68,
-      "title": "the Mechanized Menace",
-      "name": "Rumble",
-      "image": {
-        "w": 48,
-        "full": "Rumble.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 192
-      },
-      "key": "Rumble",
-      "info": {
-        "defense": 6,
-        "magic": 8,
-        "difficulty": 10,
-        "attack": 3
-      }
-    },
-    {
-      "id": 37,
-      "title": "Maven of the Strings",
-      "name": "Sona",
-      "image": {
-        "w": 48,
-        "full": "Sona.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 192
-      },
-      "key": "Sona",
-      "info": {
-        "defense": 2,
-        "magic": 8,
-        "difficulty": 4,
-        "attack": 5
-      }
-    },
-    {
-      "id": 82,
-      "title": "the Master of Metal",
-      "name": "Mordekaiser",
-      "image": {
-        "w": 48,
-        "full": "Mordekaiser.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 336
-      },
-      "key": "Mordekaiser",
-      "info": {
-        "defense": 6,
-        "magic": 7,
-        "difficulty": 7,
-        "attack": 4
-      }
-    },
-    {
-      "id": 96,
-      "title": "the Mouth of the Abyss",
-      "name": "Kog'Maw",
-      "image": {
-        "w": 48,
-        "full": "KogMaw.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 144
-      },
-      "key": "KogMaw",
-      "info": {
-        "defense": 2,
-        "magic": 5,
-        "difficulty": 6,
-        "attack": 8
-      }
-    },
-    {
-      "id": 55,
-      "title": "the Sinister Blade",
-      "name": "Katarina",
-      "image": {
-        "w": 48,
-        "full": "Katarina.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 432
-      },
-      "key": "Katarina",
-      "info": {
-        "defense": 3,
-        "magic": 9,
-        "difficulty": 8,
-        "attack": 4
-      }
-    },
-    {
-      "id": 117,
-      "title": "the Fae Sorceress",
-      "name": "Lulu",
-      "image": {
-        "w": 48,
-        "full": "Lulu.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 432
-      },
-      "key": "Lulu",
-      "info": {
-        "defense": 5,
-        "magic": 7,
-        "difficulty": 5,
-        "attack": 4
-      }
-    },
-    {
-      "id": 22,
-      "title": "the Frost Archer",
-      "name": "Ashe",
-      "image": {
-        "w": 48,
-        "full": "Ashe.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 336
-      },
-      "key": "Ashe",
-      "info": {
-        "defense": 3,
-        "magic": 2,
-        "difficulty": 4,
-        "attack": 7
-      }
-    },
-    {
-      "id": 30,
-      "title": "the Deathsinger",
-      "name": "Karthus",
-      "image": {
-        "w": 48,
-        "full": "Karthus.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 336
-      },
-      "key": "Karthus",
-      "info": {
-        "defense": 2,
-        "magic": 10,
-        "difficulty": 7,
-        "attack": 2
-      }
-    },
-    {
-      "id": 12,
-      "title": "the Minotaur",
-      "name": "Alistar",
-      "image": {
-        "w": 48,
-        "full": "Alistar.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 144
-      },
-      "key": "Alistar",
-      "info": {
-        "defense": 9,
-        "magic": 5,
-        "difficulty": 7,
-        "attack": 6
-      }
-    },
-    {
-      "id": 122,
-      "title": "the Hand of Noxus",
-      "name": "Darius",
-      "image": {
-        "w": 48,
-        "full": "Darius.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 192
-      },
-      "key": "Darius",
-      "info": {
-        "defense": 5,
-        "magic": 1,
-        "difficulty": 2,
-        "attack": 9
-      }
-    },
-    {
-      "id": 67,
-      "title": "the Night Hunter",
-      "name": "Vayne",
-      "image": {
-        "w": 48,
-        "full": "Vayne.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 0
-      },
-      "key": "Vayne",
-      "info": {
-        "defense": 1,
-        "magic": 1,
-        "difficulty": 8,
-        "attack": 10
-      }
-    },
-    {
-      "id": 77,
-      "title": "the Spirit Walker",
-      "name": "Udyr",
-      "image": {
-        "w": 48,
-        "full": "Udyr.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 336
-      },
-      "key": "Udyr",
-      "info": {
-        "defense": 7,
-        "magic": 4,
-        "difficulty": 7,
-        "attack": 8
-      }
-    },
-    {
-      "id": 110,
-      "title": "the Arrow of Retribution",
-      "name": "Varus",
-      "image": {
-        "w": 48,
-        "full": "Varus.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 432
-      },
-      "key": "Varus",
-      "info": {
-        "defense": 3,
-        "magic": 4,
-        "difficulty": 2,
-        "attack": 7
-      }
-    },
-    {
-      "id": 89,
-      "title": "the Radiant Dawn",
-      "name": "Leona",
-      "image": {
-        "w": 48,
-        "full": "Leona.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 288
-      },
-      "key": "Leona",
-      "info": {
-        "defense": 8,
-        "magic": 3,
-        "difficulty": 4,
-        "attack": 4
-      }
-    },
-    {
-      "id": 126,
-      "title": "the Defender of Tomorrow",
-      "name": "Jayce",
-      "image": {
-        "w": 48,
-        "full": "Jayce.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 240
-      },
-      "key": "Jayce",
-      "info": {
-        "defense": 4,
-        "magic": 3,
-        "difficulty": 7,
-        "attack": 8
-      }
-    },
-    {
-      "id": 134,
-      "title": "the Dark Sovereign",
-      "name": "Syndra",
-      "image": {
-        "w": 48,
-        "full": "Syndra.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 336
-      },
-      "key": "Syndra",
-      "info": {
-        "defense": 3,
-        "magic": 9,
-        "difficulty": 8,
-        "attack": 2
-      }
-    },
-    {
-      "id": 80,
-      "title": "the Artisan of War",
-      "name": "Pantheon",
-      "image": {
-        "w": 48,
-        "full": "Pantheon.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 336
-      },
-      "key": "Pantheon",
-      "info": {
-        "defense": 4,
-        "magic": 3,
-        "difficulty": 4,
-        "attack": 9
-      }
-    },
-    {
-      "id": 92,
-      "title": "the Exile",
-      "name": "Riven",
-      "image": {
-        "w": 48,
-        "full": "Riven.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 144
-      },
-      "key": "Riven",
-      "info": {
-        "defense": 5,
-        "magic": 1,
-        "difficulty": 8,
-        "attack": 8
-      }
-    },
-    {
-      "id": 121,
-      "title": "the Voidreaver",
-      "name": "Kha'Zix",
-      "image": {
-        "w": 48,
-        "full": "Khazix.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 96
-      },
-      "key": "Khazix",
-      "info": {
-        "defense": 4,
-        "magic": 3,
-        "difficulty": 6,
-        "attack": 9
-      }
-    },
-    {
-      "id": 42,
-      "title": "the Daring Bombardier",
-      "name": "Corki",
-      "image": {
-        "w": 48,
-        "full": "Corki.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 144
-      },
-      "key": "Corki",
-      "info": {
-        "defense": 3,
-        "magic": 6,
-        "difficulty": 6,
-        "attack": 8
-      }
-    },
-    {
-      "id": 51,
-      "title": "the Sheriff of Piltover",
-      "name": "Caitlyn",
-      "image": {
-        "w": 48,
-        "full": "Caitlyn.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 0
-      },
-      "key": "Caitlyn",
-      "info": {
-        "defense": 2,
-        "magic": 2,
-        "difficulty": 6,
-        "attack": 8
-      }
-    },
-    {
-      "id": 268,
-      "title": "the Emperor of the Sands",
-      "name": "Azir",
-      "image": {
-        "w": 48,
-        "full": "Azir.png",
-        "sprite": "champion4.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 0
-      },
-      "key": "Azir",
-      "info": {
-        "defense": 3,
-        "magic": 8,
-        "difficulty": 9,
-        "attack": 6
-      }
-    },
-    {
-      "id": 76,
-      "title": "the Bestial Huntress",
-      "name": "Nidalee",
-      "image": {
-        "w": 48,
-        "full": "Nidalee.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 96
-      },
-      "key": "Nidalee",
-      "info": {
-        "defense": 4,
-        "magic": 7,
-        "difficulty": 8,
-        "attack": 5
-      }
-    },
-    {
-      "id": 3,
-      "title": "the Sentinel's Sorrow",
-      "name": "Galio",
-      "image": {
-        "w": 48,
-        "full": "Galio.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 192
-      },
-      "key": "Galio",
-      "info": {
-        "defense": 7,
-        "magic": 6,
-        "difficulty": 3,
-        "attack": 3
-      }
-    },
-    {
-      "id": 85,
-      "title": "the Heart of the Tempest",
-      "name": "Kennen",
-      "image": {
-        "w": 48,
-        "full": "Kennen.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 48
-      },
-      "key": "Kennen",
-      "info": {
-        "defense": 4,
-        "magic": 7,
-        "difficulty": 4,
-        "attack": 6
-      }
-    },
-    {
-      "id": 45,
-      "title": "the Tiny Master of Evil",
-      "name": "Veigar",
-      "image": {
-        "w": 48,
-        "full": "Veigar.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 48
-      },
-      "key": "Veigar",
-      "info": {
-        "defense": 2,
-        "magic": 10,
-        "difficulty": 7,
-        "attack": 2
-      }
-    },
-    {
-      "id": 150,
-      "title": "the Missing Link",
-      "name": "Gnar",
-      "image": {
-        "w": 48,
-        "full": "Gnar.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 432
-      },
-      "key": "Gnar",
-      "info": {
-        "defense": 5,
-        "magic": 5,
-        "difficulty": 8,
-        "attack": 6
-      }
-    },
-    {
-      "id": 104,
-      "title": "the Outlaw",
-      "name": "Graves",
-      "image": {
-        "w": 48,
-        "full": "Graves.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 384
-      },
-      "key": "Graves",
-      "info": {
-        "defense": 5,
-        "magic": 3,
-        "difficulty": 3,
-        "attack": 8
-      }
-    },
-    {
-      "id": 90,
-      "title": "the Prophet of the Void",
-      "name": "Malzahar",
-      "image": {
-        "w": 48,
-        "full": "Malzahar.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 96
-      },
-      "key": "Malzahar",
-      "info": {
-        "defense": 2,
-        "magic": 9,
-        "difficulty": 6,
-        "attack": 2
-      }
-    },
-    {
-      "id": 254,
-      "title": "the Piltover Enforcer",
-      "name": "Vi",
-      "image": {
-        "w": 48,
-        "full": "Vi.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 96
-      },
-      "key": "Vi",
-      "info": {
-        "defense": 5,
-        "magic": 3,
-        "difficulty": 4,
-        "attack": 8
-      }
-    },
-    {
-      "id": 10,
-      "title": "The Judicator",
-      "name": "Kayle",
-      "image": {
-        "w": 48,
-        "full": "Kayle.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 0
-      },
-      "key": "Kayle",
-      "info": {
-        "defense": 6,
-        "magic": 7,
-        "difficulty": 7,
-        "attack": 6
-      }
-    },
-    {
-      "id": 39,
-      "title": "the Will of the Blades",
-      "name": "Irelia",
-      "image": {
-        "w": 48,
-        "full": "Irelia.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 48
-      },
-      "key": "Irelia",
-      "info": {
-        "defense": 4,
-        "magic": 5,
-        "difficulty": 5,
-        "attack": 7
-      }
-    },
-    {
-      "id": 64,
-      "title": "the Blind Monk",
-      "name": "Lee Sin",
-      "image": {
-        "w": 48,
-        "full": "LeeSin.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 240
-      },
-      "key": "LeeSin",
-      "info": {
-        "defense": 5,
-        "magic": 3,
-        "difficulty": 6,
-        "attack": 8
-      }
-    },
-    {
-      "id": 60,
-      "title": "The Spider Queen",
-      "name": "Elise",
-      "image": {
-        "w": 48,
-        "full": "Elise.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 384
-      },
-      "key": "Elise",
-      "info": {
-        "defense": 5,
-        "magic": 7,
-        "difficulty": 9,
-        "attack": 6
-      }
-    },
-    {
-      "id": 106,
-      "title": "the Thunder's Roar",
-      "name": "Volibear",
-      "image": {
-        "w": 48,
-        "full": "Volibear.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 240
-      },
-      "key": "Volibear",
-      "info": {
-        "defense": 7,
-        "magic": 4,
-        "difficulty": 3,
-        "attack": 7
-      }
-    },
-    {
-      "id": 20,
-      "title": "the Yeti Rider",
-      "name": "Nunu",
-      "image": {
-        "w": 48,
-        "full": "Nunu.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 192
-      },
-      "key": "Nunu",
-      "info": {
-        "defense": 6,
-        "magic": 7,
-        "difficulty": 4,
-        "attack": 4
-      }
-    },
-    {
-      "id": 4,
-      "title": "the Card Master",
-      "name": "Twisted Fate",
-      "image": {
-        "w": 48,
-        "full": "TwistedFate.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 240
-      },
-      "key": "TwistedFate",
-      "info": {
-        "defense": 2,
-        "magic": 6,
-        "difficulty": 9,
-        "attack": 6
-      }
-    },
-    {
-      "id": 24,
-      "title": "Grandmaster at Arms",
-      "name": "Jax",
-      "image": {
-        "w": 48,
-        "full": "Jax.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 192
-      },
-      "key": "Jax",
-      "info": {
-        "defense": 5,
-        "magic": 7,
-        "difficulty": 5,
-        "attack": 7
-      }
-    },
-    {
-      "id": 102,
-      "title": "the Half-Dragon",
-      "name": "Shyvana",
-      "image": {
-        "w": 48,
-        "full": "Shyvana.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 432
-      },
-      "key": "Shyvana",
-      "info": {
-        "defense": 6,
-        "magic": 3,
-        "difficulty": 4,
-        "attack": 8
-      }
-    },
-    {
-      "id": 36,
-      "title": "the Madman of Zaun",
-      "name": "Dr. Mundo",
-      "image": {
-        "w": 48,
-        "full": "DrMundo.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 336
-      },
-      "key": "DrMundo",
-      "info": {
-        "defense": 7,
-        "magic": 6,
-        "difficulty": 5,
-        "attack": 5
-      }
-    },
-    {
-      "id": 63,
-      "title": "the Burning Vengeance",
-      "name": "Brand",
-      "image": {
-        "w": 48,
-        "full": "Brand.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 432
-      },
-      "key": "Brand",
-      "info": {
-        "defense": 2,
-        "magic": 9,
-        "difficulty": 4,
-        "attack": 2
-      }
-    },
-    {
-      "id": 131,
-      "title": "Scorn of the Moon",
-      "name": "Diana",
-      "image": {
-        "w": 48,
-        "full": "Diana.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 240
-      },
-      "key": "Diana",
-      "info": {
-        "defense": 6,
-        "magic": 8,
-        "difficulty": 4,
-        "attack": 7
-      }
-    },
-    {
-      "id": 113,
-      "title": "the Winter's Wrath",
-      "name": "Sejuani",
-      "image": {
-        "w": 48,
-        "full": "Sejuani.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 288
-      },
-      "key": "Sejuani",
-      "info": {
-        "defense": 7,
-        "magic": 6,
-        "difficulty": 4,
-        "attack": 5
-      }
-    },
-    {
-      "id": 8,
-      "title": "the Crimson Reaper",
-      "name": "Vladimir",
-      "image": {
-        "w": 48,
-        "full": "Vladimir.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 192
-      },
-      "key": "Vladimir",
-      "info": {
-        "defense": 6,
-        "magic": 8,
-        "difficulty": 7,
-        "attack": 2
-      }
-    },
-    {
-      "id": 154,
-      "title": "the Secret Weapon",
-      "name": "Zac",
-      "image": {
-        "w": 48,
-        "full": "Zac.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 0
-      },
-      "key": "Zac",
-      "info": {
-        "defense": 7,
-        "magic": 7,
-        "difficulty": 8,
-        "attack": 3
-      }
-    },
-    {
-      "id": 133,
-      "title": "Demacia's Wings",
-      "name": "Quinn",
-      "image": {
-        "w": 48,
-        "full": "Quinn.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 432
-      },
-      "key": "Quinn",
-      "info": {
-        "defense": 4,
-        "magic": 2,
-        "difficulty": 5,
-        "attack": 9
-      }
-    },
-    {
-      "id": 84,
-      "title": "the Fist of Shadow",
-      "name": "Akali",
-      "image": {
-        "w": 48,
-        "full": "Akali.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 96
-      },
-      "key": "Akali",
-      "info": {
-        "defense": 3,
-        "magic": 8,
-        "difficulty": 7,
-        "attack": 5
-      }
-    },
-    {
-      "id": 18,
-      "title": "the Megling Gunner",
-      "name": "Tristana",
-      "image": {
-        "w": 48,
-        "full": "Tristana.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 96
-      },
-      "key": "Tristana",
-      "info": {
-        "defense": 3,
-        "magic": 5,
-        "difficulty": 4,
-        "attack": 9
-      }
-    },
-    {
-      "id": 120,
-      "title": "the Shadow of War",
-      "name": "Hecarim",
-      "image": {
-        "w": 48,
-        "full": "Hecarim.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 432
-      },
-      "key": "Hecarim",
-      "info": {
-        "defense": 6,
-        "magic": 4,
-        "difficulty": 6,
-        "attack": 8
-      }
-    },
-    {
-      "id": 15,
-      "title": "the Battle Mistress",
-      "name": "Sivir",
-      "image": {
-        "w": 48,
-        "full": "Sivir.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 96
-      },
-      "key": "Sivir",
-      "info": {
-        "defense": 3,
-        "magic": 1,
-        "difficulty": 4,
-        "attack": 9
-      }
-    },
-    {
-      "id": 236,
-      "title": "the Purifier",
-      "name": "Lucian",
-      "image": {
-        "w": 48,
-        "full": "Lucian.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 384
-      },
-      "key": "Lucian",
-      "info": {
-        "defense": 5,
-        "magic": 3,
-        "difficulty": 6,
-        "attack": 8
-      }
-    },
-    {
-      "id": 107,
-      "title": "the Pridestalker",
-      "name": "Rengar",
-      "image": {
-        "w": 48,
-        "full": "Rengar.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 96
-      },
-      "key": "Rengar",
-      "info": {
-        "defense": 4,
-        "magic": 2,
-        "difficulty": 8,
-        "attack": 7
-      }
-    },
-    {
-      "id": 19,
-      "title": "the Blood Hunter",
-      "name": "Warwick",
-      "image": {
-        "w": 48,
-        "full": "Warwick.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 288
-      },
-      "key": "Warwick",
-      "info": {
-        "defense": 4,
-        "magic": 4,
-        "difficulty": 3,
-        "attack": 7
-      }
-    },
-    {
-      "id": 72,
-      "title": "the Crystal Vanguard",
-      "name": "Skarner",
-      "image": {
-        "w": 48,
-        "full": "Skarner.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 144
-      },
-      "key": "Skarner",
-      "info": {
-        "defense": 6,
-        "magic": 5,
-        "difficulty": 5,
-        "attack": 7
-      }
-    },
-    {
-      "id": 54,
-      "title": "Shard of the Monolith",
-      "name": "Malphite",
-      "image": {
-        "w": 48,
-        "full": "Malphite.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 48
-      },
-      "key": "Malphite",
-      "info": {
-        "defense": 9,
-        "magic": 7,
-        "difficulty": 2,
-        "attack": 5
-      }
-    },
-    {
-      "id": 157,
-      "title": "the Unforgiven",
-      "name": "Yasuo",
-      "image": {
-        "w": 48,
-        "full": "Yasuo.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 288
-      },
-      "key": "Yasuo",
-      "info": {
-        "defense": 4,
-        "magic": 4,
-        "difficulty": 10,
-        "attack": 8
-      }
-    },
-    {
-      "id": 101,
-      "title": "the Magus Ascendant",
-      "name": "Xerath",
-      "image": {
-        "w": 48,
-        "full": "Xerath.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 336
-      },
-      "key": "Xerath",
-      "info": {
-        "defense": 3,
-        "magic": 10,
-        "difficulty": 8,
-        "attack": 1
-      }
-    },
-    {
-      "id": 17,
-      "title": "the Swift Scout",
-      "name": "Teemo",
-      "image": {
-        "w": 48,
-        "full": "Teemo.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 0
-      },
-      "key": "Teemo",
-      "info": {
-        "defense": 3,
-        "magic": 7,
-        "difficulty": 6,
-        "attack": 5
-      }
-    },
-    {
-      "id": 75,
-      "title": "the Curator of the Sands",
-      "name": "Nasus",
-      "image": {
-        "w": 48,
-        "full": "Nasus.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 0
-      },
-      "key": "Nasus",
-      "info": {
-        "defense": 5,
-        "magic": 6,
-        "difficulty": 6,
-        "attack": 7
-      }
-    },
-    {
-      "id": 58,
-      "title": "the Butcher of the Sands",
-      "name": "Renekton",
-      "image": {
-        "w": 48,
-        "full": "Renekton.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 48
-      },
-      "key": "Renekton",
-      "info": {
-        "defense": 5,
-        "magic": 2,
-        "difficulty": 3,
-        "attack": 8
-      }
-    },
-    {
-      "id": 119,
-      "title": "the Glorious Executioner",
-      "name": "Draven",
-      "image": {
-        "w": 48,
-        "full": "Draven.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 288
-      },
-      "key": "Draven",
-      "info": {
-        "defense": 3,
-        "magic": 1,
-        "difficulty": 8,
-        "attack": 9
-      }
-    },
-    {
-      "id": 35,
-      "title": "the Demon Jester",
-      "name": "Shaco",
-      "image": {
-        "w": 48,
-        "full": "Shaco.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 336
-      },
-      "key": "Shaco",
-      "info": {
-        "defense": 4,
-        "magic": 6,
-        "difficulty": 9,
-        "attack": 8
-      }
-    },
-    {
-      "id": 50,
-      "title": "the Master Tactician",
-      "name": "Swain",
-      "image": {
-        "w": 48,
-        "full": "Swain.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 288
-      },
-      "key": "Swain",
-      "info": {
-        "defense": 6,
-        "magic": 9,
-        "difficulty": 8,
-        "attack": 2
-      }
-    },
-    {
-      "id": 115,
-      "title": "the Hexplosives Expert",
-      "name": "Ziggs",
-      "image": {
-        "w": 48,
-        "full": "Ziggs.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 96
-      },
-      "key": "Ziggs",
-      "info": {
-        "defense": 4,
-        "magic": 9,
-        "difficulty": 4,
-        "attack": 2
-      }
-    },
-    {
-      "id": 40,
-      "title": "the Storm's Fury",
-      "name": "Janna",
-      "image": {
-        "w": 48,
-        "full": "Janna.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 96
-      },
-      "key": "Janna",
-      "info": {
-        "defense": 5,
-        "magic": 7,
-        "difficulty": 7,
-        "attack": 3
-      }
-    },
-    {
-      "id": 91,
-      "title": "the Blade's Shadow",
-      "name": "Talon",
-      "image": {
-        "w": 48,
-        "full": "Talon.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 384
-      },
-      "key": "Talon",
-      "info": {
-        "defense": 3,
-        "magic": 1,
-        "difficulty": 7,
-        "attack": 9
-      }
-    },
-    {
-      "id": 61,
-      "title": "the Lady of Clockwork",
-      "name": "Orianna",
-      "image": {
-        "w": 48,
-        "full": "Orianna.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 288
-      },
-      "key": "Orianna",
-      "info": {
-        "defense": 3,
-        "magic": 9,
-        "difficulty": 7,
-        "attack": 4
-      }
-    },
-    {
-      "id": 9,
-      "title": "the Harbinger of Doom",
-      "name": "Fiddlesticks",
-      "image": {
-        "w": 48,
-        "full": "FiddleSticks.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 48
-      },
-      "key": "FiddleSticks",
-      "info": {
-        "defense": 3,
-        "magic": 9,
-        "difficulty": 9,
-        "attack": 2
-      }
-    },
-    {
-      "id": 114,
-      "title": "the Grand Duelist",
-      "name": "Fiora",
-      "image": {
-        "w": 48,
-        "full": "Fiora.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 96
-      },
-      "key": "Fiora",
-      "info": {
-        "defense": 4,
-        "magic": 2,
-        "difficulty": 3,
-        "attack": 10
-      }
-    },
-    {
-      "id": 31,
-      "title": "the Terror of the Void",
-      "name": "Cho'Gath",
-      "image": {
-        "w": 48,
-        "full": "Chogath.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 96
-      },
-      "key": "Chogath",
-      "info": {
-        "defense": 7,
-        "magic": 7,
-        "difficulty": 5,
-        "attack": 3
-      }
-    },
-    {
-      "id": 33,
-      "title": "the Armordillo",
-      "name": "Rammus",
-      "image": {
-        "w": 48,
-        "full": "Rammus.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 0
-      },
-      "key": "Rammus",
-      "info": {
-        "defense": 10,
-        "magic": 5,
-        "difficulty": 5,
-        "attack": 4
-      }
-    },
-    {
-      "id": 7,
-      "title": "the Deceiver",
-      "name": "LeBlanc",
-      "image": {
-        "w": 48,
-        "full": "Leblanc.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 192
-      },
-      "key": "Leblanc",
-      "info": {
-        "defense": 4,
-        "magic": 10,
-        "difficulty": 9,
-        "attack": 1
-      }
-    },
-    {
-      "id": 16,
-      "title": "the Starchild",
-      "name": "Soraka",
-      "image": {
-        "w": 48,
-        "full": "Soraka.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 240
-      },
-      "key": "Soraka",
-      "info": {
-        "defense": 5,
-        "magic": 7,
-        "difficulty": 3,
-        "attack": 2
-      }
-    },
-    {
-      "id": 26,
-      "title": "the Chronokeeper",
-      "name": "Zilean",
-      "image": {
-        "w": 48,
-        "full": "Zilean.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 144
-      },
-      "key": "Zilean",
-      "info": {
-        "defense": 5,
-        "magic": 8,
-        "difficulty": 6,
-        "attack": 2
-      }
-    },
-    {
-      "id": 56,
-      "title": "the Eternal Nightmare",
-      "name": "Nocturne",
-      "image": {
-        "w": 48,
-        "full": "Nocturne.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 144
-      },
-      "key": "Nocturne",
-      "info": {
-        "defense": 5,
-        "magic": 2,
-        "difficulty": 4,
-        "attack": 9
-      }
-    },
-    {
-      "id": 222,
-      "title": "the Loose Cannon",
-      "name": "Jinx",
-      "image": {
-        "w": 48,
-        "full": "Jinx.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 240
-      },
-      "key": "Jinx",
-      "info": {
-        "defense": 2,
-        "magic": 4,
-        "difficulty": 6,
-        "attack": 9
-      }
-    },
-    {
-      "id": 83,
-      "title": "the Gravedigger",
-      "name": "Yorick",
-      "image": {
-        "w": 48,
-        "full": "Yorick.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 432
-      },
-      "key": "Yorick",
-      "info": {
-        "defense": 6,
-        "magic": 6,
-        "difficulty": 4,
-        "attack": 6
-      }
-    },
-    {
-      "id": 6,
-      "title": "the Headsman's Pride",
-      "name": "Urgot",
-      "image": {
-        "w": 48,
-        "full": "Urgot.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 384
-      },
-      "key": "Urgot",
-      "info": {
-        "defense": 5,
-        "magic": 3,
-        "difficulty": 8,
-        "attack": 8
-      }
-    },
-    {
-      "id": 21,
-      "title": "the Bounty Hunter",
-      "name": "Miss Fortune",
-      "image": {
-        "w": 48,
-        "full": "MissFortune.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 240
-      },
-      "key": "MissFortune",
-      "info": {
-        "defense": 2,
-        "magic": 5,
-        "difficulty": 1,
-        "attack": 8
-      }
-    },
-    {
-      "id": 62,
-      "title": "the Monkey King",
-      "name": "Wukong",
-      "image": {
-        "w": 48,
-        "full": "MonkeyKing.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 288
-      },
-      "key": "MonkeyKing",
-      "info": {
-        "defense": 5,
-        "magic": 2,
-        "difficulty": 3,
-        "attack": 8
-      }
-    },
-    {
-      "id": 53,
-      "title": "the Great Steam Golem",
-      "name": "Blitzcrank",
-      "image": {
-        "w": 48,
-        "full": "Blitzcrank.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 384
-      },
-      "key": "Blitzcrank",
-      "info": {
-        "defense": 8,
-        "magic": 5,
-        "difficulty": 4,
-        "attack": 4
-      }
-    },
-    {
-      "id": 98,
-      "title": "Eye of Twilight",
-      "name": "Shen",
-      "image": {
-        "w": 48,
-        "full": "Shen.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 384
-      },
-      "key": "Shen",
-      "info": {
-        "defense": 9,
-        "magic": 3,
-        "difficulty": 4,
-        "attack": 3
-      }
-    },
-    {
-      "id": 201,
-      "title": "the Heart of the Freljord",
-      "name": "Braum",
-      "image": {
-        "w": 48,
-        "full": "Braum.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 384
-      },
-      "key": "Braum",
-      "info": {
-        "defense": 9,
-        "magic": 4,
-        "difficulty": 3,
-        "attack": 3
-      }
-    },
-    {
-      "id": 5,
-      "title": "the Seneschal of Demacia",
-      "name": "Xin Zhao",
-      "image": {
-        "w": 48,
-        "full": "XinZhao.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 48,
-        "x": 384
-      },
-      "key": "XinZhao",
-      "info": {
-        "defense": 6,
-        "magic": 3,
-        "difficulty": 2,
-        "attack": 8
-      }
-    },
-    {
-      "id": 29,
-      "title": "the Plague Rat",
-      "name": "Twitch",
-      "image": {
-        "w": 48,
-        "full": "Twitch.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 288
-      },
-      "key": "Twitch",
-      "info": {
-        "defense": 2,
-        "magic": 3,
-        "difficulty": 6,
-        "attack": 9
-      }
-    },
-    {
-      "id": 11,
-      "title": "the Wuju Bladesman",
-      "name": "Master Yi",
-      "image": {
-        "w": 48,
-        "full": "MasterYi.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 192
-      },
-      "key": "MasterYi",
-      "info": {
-        "defense": 4,
-        "magic": 2,
-        "difficulty": 4,
-        "attack": 10
-      }
-    },
-    {
-      "id": 44,
-      "title": "the Gem Knight",
-      "name": "Taric",
-      "image": {
-        "w": 48,
-        "full": "Taric.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 432
-      },
-      "key": "Taric",
-      "info": {
-        "defense": 8,
-        "magic": 5,
-        "difficulty": 5,
-        "attack": 4
-      }
-    },
-    {
-      "id": 32,
-      "title": "the Sad Mummy",
-      "name": "Amumu",
-      "image": {
-        "w": 48,
-        "full": "Amumu.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 192
-      },
-      "key": "Amumu",
-      "info": {
-        "defense": 6,
-        "magic": 8,
-        "difficulty": 3,
-        "attack": 2
-      }
-    },
-    {
-      "id": 41,
-      "title": "the Saltwater Scourge",
-      "name": "Gangplank",
-      "image": {
-        "w": 48,
-        "full": "Gangplank.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 240
-      },
-      "key": "Gangplank",
-      "info": {
-        "defense": 6,
-        "magic": 4,
-        "difficulty": 3,
-        "attack": 7
-      }
-    },
-    {
-      "id": 48,
-      "title": "the Troll King",
-      "name": "Trundle",
-      "image": {
-        "w": 48,
-        "full": "Trundle.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 144
-      },
-      "key": "Trundle",
-      "info": {
-        "defense": 6,
-        "magic": 2,
-        "difficulty": 5,
-        "attack": 7
-      }
-    },
-    {
-      "id": 38,
-      "title": "the Void Walker",
-      "name": "Kassadin",
-      "image": {
-        "w": 48,
-        "full": "Kassadin.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 384
-      },
-      "key": "Kassadin",
-      "info": {
-        "defense": 5,
-        "magic": 8,
-        "difficulty": 8,
-        "attack": 3
-      }
-    },
-    {
-      "id": 161,
-      "title": "the Eye of the Void",
-      "name": "Vel'Koz",
-      "image": {
-        "w": 48,
-        "full": "Velkoz.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 336
-      },
-      "key": "Velkoz",
-      "info": {
-        "defense": 2,
-        "magic": 10,
-        "difficulty": 8,
-        "attack": 2
-      }
-    },
-    {
-      "id": 143,
-      "title": "Rise of the Thorns",
-      "name": "Zyra",
-      "image": {
-        "w": 48,
-        "full": "Zyra.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 192
-      },
-      "key": "Zyra",
-      "info": {
-        "defense": 3,
-        "magic": 8,
-        "difficulty": 7,
-        "attack": 4
-      }
-    },
-    {
-      "id": 267,
-      "title": "the Tidecaller",
-      "name": "Nami",
-      "image": {
-        "w": 48,
-        "full": "Nami.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 432
-      },
-      "key": "Nami",
-      "info": {
-        "defense": 3,
-        "magic": 7,
-        "difficulty": 5,
-        "attack": 4
-      }
-    },
-    {
-      "id": 59,
-      "title": "the Exemplar of Demacia",
-      "name": "Jarvan IV",
-      "image": {
-        "w": 48,
-        "full": "JarvanIV.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "h": 48,
-        "y": 0,
-        "x": 144
-      },
-      "key": "JarvanIV",
-      "info": {
-        "defense": 8,
-        "magic": 3,
-        "difficulty": 5,
-        "attack": 6
-      }
-    },
-    {
-      "id": 81,
-      "title": "the Prodigal Explorer",
-      "name": "Ezreal",
-      "image": {
-        "w": 48,
-        "full": "Ezreal.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "h": 48,
-        "y": 96,
-        "x": 0
-      },
-      "key": "Ezreal",
-      "info": {
-        "defense": 2,
-        "magic": 6,
-        "difficulty": 7,
-        "attack": 7
+      "id":266,
+      "key":"Aatrox",
+      "name":"Aatrox",
+      "title":"the Darkin Blade",
+      "image":{
+        "full":"Aatrox.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":0,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":4,
+        "magic":3,
+        "difficulty":4
+      }
+    },
+    {
+      "id":412,
+      "key":"Thresh",
+      "name":"Thresh",
+      "title":"the Chain Warden",
+      "image":{
+        "full":"Thresh.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":240,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":6,
+        "magic":6,
+        "difficulty":7
+      }
+    },
+    {
+      "id":23,
+      "key":"Tryndamere",
+      "name":"Tryndamere",
+      "title":"the Barbarian King",
+      "image":{
+        "full":"Tryndamere.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":384,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":10,
+        "defense":5,
+        "magic":2,
+        "difficulty":5
+      }
+    },
+    {
+      "id":79,
+      "key":"Gragas",
+      "name":"Gragas",
+      "title":"the Rabble Rouser",
+      "image":{
+        "full":"Gragas.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":0,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":7,
+        "magic":6,
+        "difficulty":5
+      }
+    },
+    {
+      "id":69,
+      "key":"Cassiopeia",
+      "name":"Cassiopeia",
+      "title":"the Serpent's Embrace",
+      "image":{
+        "full":"Cassiopeia.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":144,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":3,
+        "magic":9,
+        "difficulty":10
+      }
+    },
+    {
+      "id":78,
+      "key":"Poppy",
+      "name":"Poppy",
+      "title":"the Iron Ambassador",
+      "image":{
+        "full":"Poppy.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":96,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":6,
+        "magic":5,
+        "difficulty":7
+      }
+    },
+    {
+      "id":13,
+      "key":"Ryze",
+      "name":"Ryze",
+      "title":"the Rogue Mage",
+      "image":{
+        "full":"Ryze.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":432,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":2,
+        "magic":10,
+        "difficulty":7
+      }
+    },
+    {
+      "id":14,
+      "key":"Sion",
+      "name":"Sion",
+      "title":"The Undead Juggernaut",
+      "image":{
+        "full":"Sion.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":240,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":5,
+        "magic":1,
+        "difficulty":4
+      }
+    },
+    {
+      "id":1,
+      "key":"Annie",
+      "name":"Annie",
+      "title":"the Dark Child",
+      "image":{
+        "full":"Annie.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":288,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":3,
+        "magic":10,
+        "difficulty":6
+      }
+    },
+    {
+      "id":43,
+      "key":"Karma",
+      "name":"Karma",
+      "title":"the Enlightened One",
+      "image":{
+        "full":"Karma.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":0,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":1,
+        "defense":7,
+        "magic":8,
+        "difficulty":5
+      }
+    },
+    {
+      "id":111,
+      "key":"Nautilus",
+      "name":"Nautilus",
+      "title":"the Titan of the Depths",
+      "image":{
+        "full":"Nautilus.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":240,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":6,
+        "magic":6,
+        "difficulty":6
+      }
+    },
+    {
+      "id":99,
+      "key":"Lux",
+      "name":"Lux",
+      "title":"the Lady of Luminosity",
+      "image":{
+        "full":"Lux.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":192,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":4,
+        "magic":9,
+        "difficulty":5
+      }
+    },
+    {
+      "id":103,
+      "key":"Ahri",
+      "name":"Ahri",
+      "title":"the Nine-Tailed Fox",
+      "image":{
+        "full":"Ahri.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":48,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":4,
+        "magic":8,
+        "difficulty":5
+      }
+    },
+    {
+      "id":2,
+      "key":"Olaf",
+      "name":"Olaf",
+      "title":"the Berserker",
+      "image":{
+        "full":"Olaf.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":432,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":5,
+        "magic":3,
+        "difficulty":3
+      }
+    },
+    {
+      "id":112,
+      "key":"Viktor",
+      "name":"Viktor",
+      "title":"the Machine Herald",
+      "image":{
+        "full":"Viktor.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":384,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":4,
+        "magic":10,
+        "difficulty":9
+      }
+    },
+    {
+      "id":34,
+      "key":"Anivia",
+      "name":"Anivia",
+      "title":"the Cryophoenix",
+      "image":{
+        "full":"Anivia.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":240,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":1,
+        "defense":4,
+        "magic":10,
+        "difficulty":10
+      }
+    },
+    {
+      "id":86,
+      "key":"Garen",
+      "name":"Garen",
+      "title":"The Might of Demacia",
+      "image":{
+        "full":"Garen.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":384,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":7,
+        "magic":1,
+        "difficulty":5
+      }
+    },
+    {
+      "id":27,
+      "key":"Singed",
+      "name":"Singed",
+      "title":"the Mad Chemist",
+      "image":{
+        "full":"Singed.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":192,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":8,
+        "magic":7,
+        "difficulty":10
+      }
+    },
+    {
+      "id":127,
+      "key":"Lissandra",
+      "name":"Lissandra",
+      "title":"the Ice Witch",
+      "image":{
+        "full":"Lissandra.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":48,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":5,
+        "magic":8,
+        "difficulty":6
+      }
+    },
+    {
+      "id":57,
+      "key":"Maokai",
+      "name":"Maokai",
+      "title":"the Twisted Treant",
+      "image":{
+        "full":"Maokai.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":336,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":8,
+        "magic":6,
+        "difficulty":3
+      }
+    },
+    {
+      "id":25,
+      "key":"Morgana",
+      "name":"Morgana",
+      "title":"Fallen Angel",
+      "image":{
+        "full":"Morgana.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":96,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":1,
+        "defense":6,
+        "magic":8,
+        "difficulty":1
+      }
+    },
+    {
+      "id":28,
+      "key":"Evelynn",
+      "name":"Evelynn",
+      "title":"the Widowmaker",
+      "image":{
+        "full":"Evelynn.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":48,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":2,
+        "magic":7,
+        "difficulty":10
+      }
+    },
+    {
+      "id":105,
+      "key":"Fizz",
+      "name":"Fizz",
+      "title":"the Tidal Trickster",
+      "image":{
+        "full":"Fizz.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":240,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":4,
+        "magic":7,
+        "difficulty":6
+      }
+    },
+    {
+      "id":238,
+      "key":"Zed",
+      "name":"Zed",
+      "title":"the Master of Shadows",
+      "image":{
+        "full":"Zed.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":336,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":2,
+        "magic":1,
+        "difficulty":7
+      }
+    },
+    {
+      "id":74,
+      "key":"Heimerdinger",
+      "name":"Heimerdinger",
+      "title":"the Revered Inventor",
+      "image":{
+        "full":"Heimerdinger.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":144,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":6,
+        "magic":8,
+        "difficulty":8
+      }
+    },
+    {
+      "id":68,
+      "key":"Rumble",
+      "name":"Rumble",
+      "title":"the Mechanized Menace",
+      "image":{
+        "full":"Rumble.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":384,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":6,
+        "magic":8,
+        "difficulty":10
+      }
+    },
+    {
+      "id":82,
+      "key":"Mordekaiser",
+      "name":"Mordekaiser",
+      "title":"the Master of Metal",
+      "image":{
+        "full":"Mordekaiser.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":48,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":6,
+        "magic":7,
+        "difficulty":7
+      }
+    },
+    {
+      "id":37,
+      "key":"Sona",
+      "name":"Sona",
+      "title":"Maven of the Strings",
+      "image":{
+        "full":"Sona.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":384,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":2,
+        "magic":8,
+        "difficulty":4
+      }
+    },
+    {
+      "id":55,
+      "key":"Katarina",
+      "name":"Katarina",
+      "title":"the Sinister Blade",
+      "image":{
+        "full":"Katarina.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":144,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":3,
+        "magic":9,
+        "difficulty":8
+      }
+    },
+    {
+      "id":96,
+      "key":"KogMaw",
+      "name":"Kog'Maw",
+      "title":"the Mouth of the Abyss",
+      "image":{
+        "full":"KogMaw.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":336,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":2,
+        "magic":5,
+        "difficulty":6
+      }
+    },
+    {
+      "id":22,
+      "key":"Ashe",
+      "name":"Ashe",
+      "title":"the Frost Archer",
+      "image":{
+        "full":"Ashe.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":336,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":3,
+        "magic":2,
+        "difficulty":4
+      }
+    },
+    {
+      "id":117,
+      "key":"Lulu",
+      "name":"Lulu",
+      "title":"the Fae Sorceress",
+      "image":{
+        "full":"Lulu.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":144,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":5,
+        "magic":7,
+        "difficulty":5
+      }
+    },
+    {
+      "id":30,
+      "key":"Karthus",
+      "name":"Karthus",
+      "title":"the Deathsinger",
+      "image":{
+        "full":"Karthus.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":48,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":2,
+        "magic":10,
+        "difficulty":7
+      }
+    },
+    {
+      "id":12,
+      "key":"Alistar",
+      "name":"Alistar",
+      "title":"the Minotaur",
+      "image":{
+        "full":"Alistar.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":144,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":9,
+        "magic":5,
+        "difficulty":7
+      }
+    },
+    {
+      "id":122,
+      "key":"Darius",
+      "name":"Darius",
+      "title":"the Hand of Noxus",
+      "image":{
+        "full":"Darius.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":288,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":5,
+        "magic":1,
+        "difficulty":2
+      }
+    },
+    {
+      "id":67,
+      "key":"Vayne",
+      "name":"Vayne",
+      "title":"the Night Hunter",
+      "image":{
+        "full":"Vayne.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":192,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":10,
+        "defense":1,
+        "magic":1,
+        "difficulty":8
+      }
+    },
+    {
+      "id":110,
+      "key":"Varus",
+      "name":"Varus",
+      "title":"the Arrow of Retribution",
+      "image":{
+        "full":"Varus.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":144,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":3,
+        "magic":4,
+        "difficulty":2
+      }
+    },
+    {
+      "id":77,
+      "key":"Udyr",
+      "name":"Udyr",
+      "title":"the Spirit Walker",
+      "image":{
+        "full":"Udyr.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":48,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":7,
+        "magic":4,
+        "difficulty":7
+      }
+    },
+    {
+      "id":126,
+      "key":"Jayce",
+      "name":"Jayce",
+      "title":"the Defender of Tomorrow",
+      "image":{
+        "full":"Jayce.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":384,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":4,
+        "magic":3,
+        "difficulty":7
+      }
+    },
+    {
+      "id":89,
+      "key":"Leona",
+      "name":"Leona",
+      "title":"the Radiant Dawn",
+      "image":{
+        "full":"Leona.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":0,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":8,
+        "magic":3,
+        "difficulty":4
+      }
+    },
+    {
+      "id":134,
+      "key":"Syndra",
+      "name":"Syndra",
+      "title":"the Dark Sovereign",
+      "image":{
+        "full":"Syndra.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":48,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":3,
+        "magic":9,
+        "difficulty":8
+      }
+    },
+    {
+      "id":80,
+      "key":"Pantheon",
+      "name":"Pantheon",
+      "title":"the Artisan of War",
+      "image":{
+        "full":"Pantheon.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":48,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":4,
+        "magic":3,
+        "difficulty":4
+      }
+    },
+    {
+      "id":121,
+      "key":"Khazix",
+      "name":"Kha'Zix",
+      "title":"the Voidreaver",
+      "image":{
+        "full":"Khazix.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":288,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":4,
+        "magic":3,
+        "difficulty":6
+      }
+    },
+    {
+      "id":92,
+      "key":"Riven",
+      "name":"Riven",
+      "title":"the Exile",
+      "image":{
+        "full":"Riven.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":336,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":1,
+        "difficulty":8
+      }
+    },
+    {
+      "id":42,
+      "key":"Corki",
+      "name":"Corki",
+      "title":"the Daring Bombardier",
+      "image":{
+        "full":"Corki.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":240,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":3,
+        "magic":6,
+        "difficulty":6
+      }
+    },
+    {
+      "id":268,
+      "key":"Azir",
+      "name":"Azir",
+      "title":"the Emperor of the Sands",
+      "image":{
+        "full":"Azir.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":384,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":3,
+        "magic":8,
+        "difficulty":9
+      }
+    },
+    {
+      "id":51,
+      "key":"Caitlyn",
+      "name":"Caitlyn",
+      "title":"the Sheriff of Piltover",
+      "image":{
+        "full":"Caitlyn.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":96,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":2,
+        "magic":2,
+        "difficulty":6
+      }
+    },
+    {
+      "id":76,
+      "key":"Nidalee",
+      "name":"Nidalee",
+      "title":"the Bestial Huntress",
+      "image":{
+        "full":"Nidalee.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":288,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":4,
+        "magic":7,
+        "difficulty":8
+      }
+    },
+    {
+      "id":3,
+      "key":"Galio",
+      "name":"Galio",
+      "title":"the Sentinel's Sorrow",
+      "image":{
+        "full":"Galio.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":288,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":7,
+        "magic":6,
+        "difficulty":3
+      }
+    },
+    {
+      "id":85,
+      "key":"Kennen",
+      "name":"Kennen",
+      "title":"the Heart of the Tempest",
+      "image":{
+        "full":"Kennen.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":240,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":4,
+        "magic":7,
+        "difficulty":4
+      }
+    },
+    {
+      "id":45,
+      "key":"Veigar",
+      "name":"Veigar",
+      "title":"the Tiny Master of Evil",
+      "image":{
+        "full":"Veigar.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":240,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":2,
+        "magic":10,
+        "difficulty":7
+      }
+    },
+    {
+      "id":150,
+      "key":"Gnar",
+      "name":"Gnar",
+      "title":"the Missing Link",
+      "image":{
+        "full":"Gnar.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":432,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":5,
+        "magic":5,
+        "difficulty":8
+      }
+    },
+    {
+      "id":104,
+      "key":"Graves",
+      "name":"Graves",
+      "title":"the Outlaw",
+      "image":{
+        "full":"Graves.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":48,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":3,
+        "difficulty":3
+      }
+    },
+    {
+      "id":90,
+      "key":"Malzahar",
+      "name":"Malzahar",
+      "title":"the Prophet of the Void",
+      "image":{
+        "full":"Malzahar.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":288,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":2,
+        "magic":9,
+        "difficulty":6
+      }
+    },
+    {
+      "id":254,
+      "key":"Vi",
+      "name":"Vi",
+      "title":"the Piltover Enforcer",
+      "image":{
+        "full":"Vi.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":336,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":3,
+        "difficulty":4
+      }
+    },
+    {
+      "id":10,
+      "key":"Kayle",
+      "name":"Kayle",
+      "title":"The Judicator",
+      "image":{
+        "full":"Kayle.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":192,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":6,
+        "magic":7,
+        "difficulty":7
+      }
+    },
+    {
+      "id":39,
+      "key":"Irelia",
+      "name":"Irelia",
+      "title":"the Will of the Blades",
+      "image":{
+        "full":"Irelia.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":192,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":4,
+        "magic":5,
+        "difficulty":5
+      }
+    },
+    {
+      "id":64,
+      "key":"LeeSin",
+      "name":"Lee Sin",
+      "title":"the Blind Monk",
+      "image":{
+        "full":"LeeSin.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":432,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":3,
+        "difficulty":6
+      }
+    },
+    {
+      "id":60,
+      "key":"Elise",
+      "name":"Elise",
+      "title":"The Spider Queen",
+      "image":{
+        "full":"Elise.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":0,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":5,
+        "magic":7,
+        "difficulty":9
+      }
+    },
+    {
+      "id":106,
+      "key":"Volibear",
+      "name":"Volibear",
+      "title":"the Thunder's Roar",
+      "image":{
+        "full":"Volibear.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":0,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":7,
+        "magic":4,
+        "difficulty":3
+      }
+    },
+    {
+      "id":20,
+      "key":"Nunu",
+      "name":"Nunu",
+      "title":"the Yeti Rider",
+      "image":{
+        "full":"Nunu.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":384,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":6,
+        "magic":7,
+        "difficulty":4
+      }
+    },
+    {
+      "id":4,
+      "key":"TwistedFate",
+      "name":"Twisted Fate",
+      "title":"the Card Master",
+      "image":{
+        "full":"TwistedFate.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":432,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":2,
+        "magic":6,
+        "difficulty":9
+      }
+    },
+    {
+      "id":24,
+      "key":"Jax",
+      "name":"Jax",
+      "title":"Grandmaster at Arms",
+      "image":{
+        "full":"Jax.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":336,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":5,
+        "magic":7,
+        "difficulty":5
+      }
+    },
+    {
+      "id":102,
+      "key":"Shyvana",
+      "name":"Shyvana",
+      "title":"the Half-Dragon",
+      "image":{
+        "full":"Shyvana.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":144,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":6,
+        "magic":3,
+        "difficulty":4
+      }
+    },
+    {
+      "id":36,
+      "key":"DrMundo",
+      "name":"Dr. Mundo",
+      "title":"the Madman of Zaun",
+      "image":{
+        "full":"DrMundo.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":432,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":7,
+        "magic":6,
+        "difficulty":5
+      }
+    },
+    {
+      "id":63,
+      "key":"Brand",
+      "name":"Brand",
+      "title":"the Burning Vengeance",
+      "image":{
+        "full":"Brand.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":0,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":2,
+        "magic":9,
+        "difficulty":4
+      }
+    },
+    {
+      "id":131,
+      "key":"Diana",
+      "name":"Diana",
+      "title":"Scorn of the Moon",
+      "image":{
+        "full":"Diana.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":336,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":6,
+        "magic":8,
+        "difficulty":4
+      }
+    },
+    {
+      "id":113,
+      "key":"Sejuani",
+      "name":"Sejuani",
+      "title":"the Winter's Wrath",
+      "image":{
+        "full":"Sejuani.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":0,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":7,
+        "magic":6,
+        "difficulty":4
+      }
+    },
+    {
+      "id":8,
+      "key":"Vladimir",
+      "name":"Vladimir",
+      "title":"the Crimson Reaper",
+      "image":{
+        "full":"Vladimir.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":432,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":6,
+        "magic":8,
+        "difficulty":7
+      }
+    },
+    {
+      "id":154,
+      "key":"Zac",
+      "name":"Zac",
+      "title":"the Secret Weapon",
+      "image":{
+        "full":"Zac.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":288,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":7,
+        "magic":7,
+        "difficulty":8
+      }
+    },
+    {
+      "id":133,
+      "key":"Quinn",
+      "name":"Quinn",
+      "title":"Demacia's Wings",
+      "image":{
+        "full":"Quinn.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":144,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":4,
+        "magic":2,
+        "difficulty":5
+      }
+    },
+    {
+      "id":84,
+      "key":"Akali",
+      "name":"Akali",
+      "title":"the Fist of Shadow",
+      "image":{
+        "full":"Akali.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":96,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":3,
+        "magic":8,
+        "difficulty":7
+      }
+    },
+    {
+      "id":18,
+      "key":"Tristana",
+      "name":"Tristana",
+      "title":"the Megling Gunner",
+      "image":{
+        "full":"Tristana.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":288,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":3,
+        "magic":5,
+        "difficulty":4
+      }
+    },
+    {
+      "id":120,
+      "key":"Hecarim",
+      "name":"Hecarim",
+      "title":"the Shadow of War",
+      "image":{
+        "full":"Hecarim.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":96,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":6,
+        "magic":4,
+        "difficulty":6
+      }
+    },
+    {
+      "id":15,
+      "key":"Sivir",
+      "name":"Sivir",
+      "title":"the Battle Mistress",
+      "image":{
+        "full":"Sivir.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":288,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":3,
+        "magic":1,
+        "difficulty":4
+      }
+    },
+    {
+      "id":236,
+      "key":"Lucian",
+      "name":"Lucian",
+      "title":"the Purifier",
+      "image":{
+        "full":"Lucian.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":96,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":3,
+        "difficulty":6
+      }
+    },
+    {
+      "id":107,
+      "key":"Rengar",
+      "name":"Rengar",
+      "title":"the Pridestalker",
+      "image":{
+        "full":"Rengar.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":288,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":4,
+        "magic":2,
+        "difficulty":8
+      }
+    },
+    {
+      "id":19,
+      "key":"Warwick",
+      "name":"Warwick",
+      "title":"the Blood Hunter",
+      "image":{
+        "full":"Warwick.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":48,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":4,
+        "magic":4,
+        "difficulty":3
+      }
+    },
+    {
+      "id":72,
+      "key":"Skarner",
+      "name":"Skarner",
+      "title":"the Crystal Vanguard",
+      "image":{
+        "full":"Skarner.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":336,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":6,
+        "magic":5,
+        "difficulty":5
+      }
+    },
+    {
+      "id":54,
+      "key":"Malphite",
+      "name":"Malphite",
+      "title":"Shard of the Monolith",
+      "image":{
+        "full":"Malphite.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":240,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":9,
+        "magic":7,
+        "difficulty":2
+      }
+    },
+    {
+      "id":157,
+      "key":"Yasuo",
+      "name":"Yasuo",
+      "title":"the Unforgiven",
+      "image":{
+        "full":"Yasuo.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":192,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":4,
+        "magic":4,
+        "difficulty":10
+      }
+    },
+    {
+      "id":101,
+      "key":"Xerath",
+      "name":"Xerath",
+      "title":"the Magus Ascendant",
+      "image":{
+        "full":"Xerath.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":96,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":1,
+        "defense":3,
+        "magic":10,
+        "difficulty":8
+      }
+    },
+    {
+      "id":17,
+      "key":"Teemo",
+      "name":"Teemo",
+      "title":"the Swift Scout",
+      "image":{
+        "full":"Teemo.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":192,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":5,
+        "defense":3,
+        "magic":7,
+        "difficulty":6
+      }
+    },
+    {
+      "id":75,
+      "key":"Nasus",
+      "name":"Nasus",
+      "title":"the Curator of the Sands",
+      "image":{
+        "full":"Nasus.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":192,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":5,
+        "magic":6,
+        "difficulty":6
+      }
+    },
+    {
+      "id":58,
+      "key":"Renekton",
+      "name":"Renekton",
+      "title":"the Butcher of the Sands",
+      "image":{
+        "full":"Renekton.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":240,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":2,
+        "difficulty":3
+      }
+    },
+    {
+      "id":119,
+      "key":"Draven",
+      "name":"Draven",
+      "title":"the Glorious Executioner",
+      "image":{
+        "full":"Draven.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":384,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":3,
+        "magic":1,
+        "difficulty":8
+      }
+    },
+    {
+      "id":35,
+      "key":"Shaco",
+      "name":"Shaco",
+      "title":"the Demon Jester",
+      "image":{
+        "full":"Shaco.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":48,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":4,
+        "magic":6,
+        "difficulty":9
+      }
+    },
+    {
+      "id":50,
+      "key":"Swain",
+      "name":"Swain",
+      "title":"the Master Tactician",
+      "image":{
+        "full":"Swain.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":0,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":6,
+        "magic":9,
+        "difficulty":8
+      }
+    },
+    {
+      "id":115,
+      "key":"Ziggs",
+      "name":"Ziggs",
+      "title":"the Hexplosives Expert",
+      "image":{
+        "full":"Ziggs.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":384,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":4,
+        "magic":9,
+        "difficulty":4
+      }
+    },
+    {
+      "id":40,
+      "key":"Janna",
+      "name":"Janna",
+      "title":"the Storm's Fury",
+      "image":{
+        "full":"Janna.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":240,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":5,
+        "magic":7,
+        "difficulty":7
+      }
+    },
+    {
+      "id":91,
+      "key":"Talon",
+      "name":"Talon",
+      "title":"the Blade's Shadow",
+      "image":{
+        "full":"Talon.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":96,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":3,
+        "magic":1,
+        "difficulty":7
+      }
+    },
+    {
+      "id":61,
+      "key":"Orianna",
+      "name":"Orianna",
+      "title":"the Lady of Clockwork",
+      "image":{
+        "full":"Orianna.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":0,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":3,
+        "magic":9,
+        "difficulty":7
+      }
+    },
+    {
+      "id":9,
+      "key":"FiddleSticks",
+      "name":"Fiddlesticks",
+      "title":"the Harbinger of Doom",
+      "image":{
+        "full":"FiddleSticks.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":144,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":3,
+        "magic":9,
+        "difficulty":9
+      }
+    },
+    {
+      "id":114,
+      "key":"Fiora",
+      "name":"Fiora",
+      "title":"the Grand Duelist",
+      "image":{
+        "full":"Fiora.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":192,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":10,
+        "defense":4,
+        "magic":2,
+        "difficulty":3
+      }
+    },
+    {
+      "id":31,
+      "key":"Chogath",
+      "name":"Cho'Gath",
+      "title":"the Terror of the Void",
+      "image":{
+        "full":"Chogath.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":192,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":7,
+        "magic":7,
+        "difficulty":5
+      }
+    },
+    {
+      "id":33,
+      "key":"Rammus",
+      "name":"Rammus",
+      "title":"the Armordillo",
+      "image":{
+        "full":"Rammus.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":192,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":10,
+        "magic":5,
+        "difficulty":5
+      }
+    },
+    {
+      "id":7,
+      "key":"Leblanc",
+      "name":"LeBlanc",
+      "title":"the Deceiver",
+      "image":{
+        "full":"Leblanc.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":384,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":1,
+        "defense":4,
+        "magic":10,
+        "difficulty":9
+      }
+    },
+    {
+      "id":26,
+      "key":"Zilean",
+      "name":"Zilean",
+      "title":"the Chronokeeper",
+      "image":{
+        "full":"Zilean.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":432,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":5,
+        "magic":8,
+        "difficulty":6
+      }
+    },
+    {
+      "id":16,
+      "key":"Soraka",
+      "name":"Soraka",
+      "title":"the Starchild",
+      "image":{
+        "full":"Soraka.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":432,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":5,
+        "magic":7,
+        "difficulty":3
+      }
+    },
+    {
+      "id":56,
+      "key":"Nocturne",
+      "name":"Nocturne",
+      "title":"the Eternal Nightmare",
+      "image":{
+        "full":"Nocturne.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":336,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":5,
+        "magic":2,
+        "difficulty":4
+      }
+    },
+    {
+      "id":222,
+      "key":"Jinx",
+      "name":"Jinx",
+      "title":"the Loose Cannon",
+      "image":{
+        "full":"Jinx.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":432,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":2,
+        "magic":4,
+        "difficulty":6
+      }
+    },
+    {
+      "id":83,
+      "key":"Yorick",
+      "name":"Yorick",
+      "title":"the Gravedigger",
+      "image":{
+        "full":"Yorick.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":240,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":6,
+        "magic":6,
+        "difficulty":4
+      }
+    },
+    {
+      "id":6,
+      "key":"Urgot",
+      "name":"Urgot",
+      "title":"the Headsman's Pride",
+      "image":{
+        "full":"Urgot.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":96,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":3,
+        "difficulty":8
+      }
+    },
+    {
+      "id":21,
+      "key":"MissFortune",
+      "name":"Miss Fortune",
+      "title":"the Bounty Hunter",
+      "image":{
+        "full":"MissFortune.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":432,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":2,
+        "magic":5,
+        "difficulty":1
+      }
+    },
+    {
+      "id":62,
+      "key":"MonkeyKing",
+      "name":"Wukong",
+      "title":"the Monkey King",
+      "image":{
+        "full":"MonkeyKing.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":0,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":5,
+        "magic":2,
+        "difficulty":3
+      }
+    },
+    {
+      "id":53,
+      "key":"Blitzcrank",
+      "name":"Blitzcrank",
+      "title":"the Great Steam Golem",
+      "image":{
+        "full":"Blitzcrank.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":432,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":8,
+        "magic":5,
+        "difficulty":4
+      }
+    },
+    {
+      "id":98,
+      "key":"Shen",
+      "name":"Shen",
+      "title":"Eye of Twilight",
+      "image":{
+        "full":"Shen.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":96,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":9,
+        "magic":3,
+        "difficulty":4
+      }
+    },
+    {
+      "id":201,
+      "key":"Braum",
+      "name":"Braum",
+      "title":"the Heart of the Freljord",
+      "image":{
+        "full":"Braum.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":48,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":9,
+        "magic":4,
+        "difficulty":3
+      }
+    },
+    {
+      "id":5,
+      "key":"XinZhao",
+      "name":"Xin Zhao",
+      "title":"the Seneschal of Demacia",
+      "image":{
+        "full":"XinZhao.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":144,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":8,
+        "defense":6,
+        "magic":3,
+        "difficulty":2
+      }
+    },
+    {
+      "id":29,
+      "key":"Twitch",
+      "name":"Twitch",
+      "title":"the Plague Rat",
+      "image":{
+        "full":"Twitch.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":0,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":9,
+        "defense":2,
+        "magic":3,
+        "difficulty":6
+      }
+    },
+    {
+      "id":11,
+      "key":"MasterYi",
+      "name":"Master Yi",
+      "title":"the Wuju Bladesman",
+      "image":{
+        "full":"MasterYi.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":384,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":10,
+        "defense":4,
+        "magic":2,
+        "difficulty":4
+      }
+    },
+    {
+      "id":44,
+      "key":"Taric",
+      "name":"Taric",
+      "title":"the Gem Knight",
+      "image":{
+        "full":"Taric.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":144,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":8,
+        "magic":5,
+        "difficulty":5
+      }
+    },
+    {
+      "id":32,
+      "key":"Amumu",
+      "name":"Amumu",
+      "title":"the Sad Mummy",
+      "image":{
+        "full":"Amumu.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":192,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":6,
+        "magic":8,
+        "difficulty":3
+      }
+    },
+    {
+      "id":41,
+      "key":"Gangplank",
+      "name":"Gangplank",
+      "title":"the Saltwater Scourge",
+      "image":{
+        "full":"Gangplank.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":336,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":6,
+        "magic":4,
+        "difficulty":3
+      }
+    },
+    {
+      "id":48,
+      "key":"Trundle",
+      "name":"Trundle",
+      "title":"the Troll King",
+      "image":{
+        "full":"Trundle.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":336,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":6,
+        "magic":2,
+        "difficulty":5
+      }
+    },
+    {
+      "id":38,
+      "key":"Kassadin",
+      "name":"Kassadin",
+      "title":"the Void Walker",
+      "image":{
+        "full":"Kassadin.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":96,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":3,
+        "defense":5,
+        "magic":8,
+        "difficulty":8
+      }
+    },
+    {
+      "id":161,
+      "key":"Velkoz",
+      "name":"Vel'Koz",
+      "title":"the Eye of the Void",
+      "image":{
+        "full":"Velkoz.png",
+        "sprite":"champion3.png",
+        "group":"champion",
+        "x":288,
+        "y":48,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":2,
+        "defense":2,
+        "magic":10,
+        "difficulty":8
+      }
+    },
+    {
+      "id":143,
+      "key":"Zyra",
+      "name":"Zyra",
+      "title":"Rise of the Thorns",
+      "image":{
+        "full":"Zyra.png",
+        "sprite":"champion4.png",
+        "group":"champion",
+        "x":0,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":3,
+        "magic":8,
+        "difficulty":7
+      }
+    },
+    {
+      "id":267,
+      "key":"Nami",
+      "name":"Nami",
+      "title":"the Tidecaller",
+      "image":{
+        "full":"Nami.png",
+        "sprite":"champion2.png",
+        "group":"champion",
+        "x":144,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":4,
+        "defense":3,
+        "magic":7,
+        "difficulty":5
+      }
+    },
+    {
+      "id":59,
+      "key":"JarvanIV",
+      "name":"Jarvan IV",
+      "title":"the Exemplar of Demacia",
+      "image":{
+        "full":"JarvanIV.png",
+        "sprite":"champion1.png",
+        "group":"champion",
+        "x":288,
+        "y":0,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":6,
+        "defense":8,
+        "magic":3,
+        "difficulty":5
+      }
+    },
+    {
+      "id":81,
+      "key":"Ezreal",
+      "name":"Ezreal",
+      "title":"the Prodigal Explorer",
+      "image":{
+        "full":"Ezreal.png",
+        "sprite":"champion0.png",
+        "group":"champion",
+        "x":96,
+        "y":96,
+        "w":48,
+        "h":48
+      },
+      "info":{
+        "attack":7,
+        "defense":2,
+        "magic":6,
+        "difficulty":7
       }
     }
   ];
-});
+})

@@ -1,9 +1,9 @@
 define(function () {
   return [
-    {name: 'Froggen', champion: 'Anivia'},
-    {name: 'Froggen', champion: 'Anivia'},
-    {name: 'Froggen', champion: 'Anivia'},
-    {name: 'Froggen', champion: 'Anivia'},
-    {name: 'Froggen', champion: 'Anivia'},
+    {name: 'Bjergsen', champion: 'Syndra'},
+    {name: 'Cool', champion: 'Orianna'},
+    {name: 'XiaoWeiXiao', champion: 'Xerath'},
+    {name: 'Hai', champion: 'Talon'},
+    {name: 'xPeke', champion: 'Lissandra'},
   ];
 });

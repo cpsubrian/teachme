@@ -1,12 +1,9 @@
 /* General
  ******************************************************************************/
 body {
-  background: #333;
+  background: #000;
   color: #eee;
-}
-section {
-  border: 1px solid #555;
-  padding: 10px;
+  font-size: 12px;
 }
 * {
   box-sizing: border-box;
@@ -15,6 +12,26 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.box {
+  color: #ddd;
+  background: linear-gradient(to bottom, rgba(65,65,65,0.9) 0%,rgba(0,0,0,0.9) 100%);
+  border-radius: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+.box.active {
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0,173,255,0.55) 0%,rgba(0,173,255,0.3) 100%);
+  border-top-color: rgba(0, 173, 255, 0.8);
+  border-right-color: rgba(0, 173, 255, 0.3);
+  border-bottom-color: rgba(0, 173, 255, 0.3);
+  border-left-color: rgba(0, 173, 255, 0.5);
+}
+.box.inactive {
+  color: #777;
 }
 
 /* Layout
@@ -35,12 +52,19 @@ body,
 .layout > section {
   display: flex;
   flex-direction: row;
+  padding: 5px;
+}
+.layout > section > section {
+  padding: 5px;
 }
 .top {
-  height: 65%;
+  flex: 2;
+  min-height: 420px;
+  z-index: 2;
 }
 .bottom {
-  height: 35%;
+  flex: 1;
+  z-index: 2;
 }
 .team,
 .bans {
@@ -55,11 +79,53 @@ body,
 .middle .champions {
   flex: 1 1 auto;
 }
+.middle .status,
+.middle .player-options {
+  flex: 1 0 auto;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111 url(../images/background.png) center center;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  opacity: 0.3;
+  z-index: 1;
+}
 
- /* Champions
+/* Status
+ ******************************************************************************/
+.status {
+
+}
+.status ul {
+  display: flex;
+  justify-content: center;
+}
+.status ul li {
+  display: block;
+  margin: 0 1px;
+  padding: 3px 40px;
+}
+.status .done {
+  color: #777;
+}
+.status .active {
+
+}
+
+/* Champions
  ******************************************************************************/
 .champions {
   overflow: auto;
+  margin: 5px 0;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .champions ul {
   display: flex;
@@ -67,19 +133,57 @@ body,
   justify-content: space-between;
 }
 .champions ul li {
-  margin-bottom: 5px;
+  padding: 2px;
 }
 .champions .champion {
   display: block;
   width: 48px;
   height: 48px;
-  border-radius: 3px;
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 .champions .champion:hover {
   cursor: pointer;
   box-shadow: inset 1px 1px 20px rgba(255, 255, 255, 0.6);
 }
+
+/* Teams
+ ******************************************************************************/
+.team {
+  display: flex;
+  flex-direction: column;
+}
+.team .players {
+  height: 100%;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
+.team .players .player {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 4px;
+}
+.player .selection {
+  display: flex;
+  justify-content: center;
+}
+.player .selection .champion {
+  width: 48px;
+  height: 48px;
+  margin-right: 4px;
+}
+.player .selection .spells {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.player .selection .spells .spell {
+  width: 22px;
+  height: 22px;
+}
+.player .name {
+  text-align: center;
+  font-size: 0.8em;
+}
+

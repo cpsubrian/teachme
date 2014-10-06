@@ -9,8 +9,24 @@ define(function (require) {
     'mainRegion': '#main'
   });
 
+  // Define api variables.
+  app.api = {
+    cdn: 'http://ddragon.leagueoflegends.com/cdn',
+    version: '4.18.1',
+    spriteUrl: function (sprite) {
+      return app.api.cdn + '/' + app.api.version + '/img/sprite/' + sprite;
+    },
+  };
+
   // Create global collections.
   app.champions = new ChampionsCollection(require('data/champions'));
+  app.champions.each(function (model) {
+    var image = model.get('image');
+    image.x = (-1 * image.x) - 1;
+    image.y = (-1 * image.y) - 1;
+    image.spriteUrl = app.api.spriteUrl(image.sprite);
+    model.set('image', image);
+  });
   app.teams = {
     friendly: new Backbone.Collection(require('data/team_friendly')),
     enemy: new Backbone.Collection(require('data/team_enemy'))
@@ -20,15 +36,6 @@ define(function (require) {
     enemy: new Backbone.Collection(require('data/bans_enemy'))
   };
   app.chats = new Backbone.Collection(require('data/chats'));
-
-  // Define api variables.
-  app.api = {
-    cdn: 'http://ddragon.leagueoflegends.com/cdn',
-    version: '4.18.1',
-    spriteUrl: function (sprite) {
-      return app.api.cdn + '/' + app.api.version + '/img/sprite/' + sprite;
-    },
-  };
 
   // Create the main layout view on app start.
   app.addInitializer(function () {
