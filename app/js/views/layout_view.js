@@ -1,5 +1,6 @@
 define(function (require) {
-  var Marionette = require('marionette')
+  var app = require('app')
+    , Marionette = require('marionette')
     , BansView = require('views/bans_view')
     , ChampionsView = require('views/champions_view')
     , ChatView = require('views/chat_view')
@@ -13,40 +14,40 @@ define(function (require) {
     template: require('hbs!templates/layout'),
 
     regions: {
-      teamA: '.team-a',
-      teamB: '.team-b',
+      teamFriendly: '.team-friendly',
+      teamEnemy: '.team-enemy',
       status: '.status',
       champions: '.champions',
       playerOptions: '.player-options',
-      bansA: '.bans-a',
-      bansB: '.bans-b',
+      bansFriendly: '.bans-friendly',
+      bansEnemy: '.bans-enemy',
       chat: '.chat'
     },
 
     onRender: function () {
-      this.teamA.show(new TeamView({
-
+      this.teamFriendly.show(new TeamView({
+        collection: app.teams.friendly
       }));
-      this.teamB.show(new TeamView({
-
+      this.teamEnemy.show(new TeamView({
+        collection: app.teams.enemy
       }));
       this.status.show(new StatusView({
 
       }));
       this.champions.show(new ChampionsView({
-
+        collection: app.champions
       }));
       this.playerOptions.show(new OptionsView({
 
       }));
-      this.bansA.show(new BansView({
-
+      this.bansFriendly.show(new BansView({
+        collection: app.bans.friendly
       }));
-      this.bansB.show(new BansView({
-
+      this.bansEnemy.show(new BansView({
+        collection: app.bans.enemy
       }));
       this.chat.show(new ChatView({
-
+        collection: app.chats
       }));
     }
   });
