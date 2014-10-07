@@ -211,6 +211,7 @@ body,
 /* Used in team items as well */
 .champion {
   position: relative;
+  background-color: #222;
 }
 .champion .champion-name {
   display: block;

@@ -4,6 +4,6 @@ define(function () {
     {name: 'dade', champion: 'Yasuo'},
     {name: 'Ggoong', champion: 'Zed'},
     {name: 'Westdoor', champion: 'TwistedFate'},
-    {name: 'Froggen', champion: 'Anivia', player: true},
+    {name: 'Froggen', player: true},
   ];
 });
