@@ -1,8 +1,9 @@
 <div class="selection">
-  <div class="champion box" style="background-image: url({{champion.image.spriteUrl}}); background-position: {{champion.image.x}}px {{champion.image.y}}px;" title="{{champion.name}}"></div>
+  {{#with champion}}{{>champion_icon}}{{/with}}
   <div class="spells">
     <div class="spell spell-1 box"></div>
     <div class="spell spell-2 box"></div>
   </div>
+  <div class="picking">Picking</div>
 </div>
 <div class="name">{{name}}</div>

@@ -4,7 +4,23 @@ define(function (require) {
 
   var TeamItemView = Marionette.ItemView.extend({
     tagName: 'div',
-    className: 'box player',
+    className: function () {
+      var status = '';
+      if (this.model.get('player')) {
+        if (this.model.get('picking')) {
+          status = 'highlight';
+        }
+        else {
+          status = 'active';
+        }
+      }
+      else {
+        if (this.model.get('picking')) {
+          status = 'selecting';
+        }
+      }
+      return 'box player ' +  status;
+    },
     template: require('hbs!templates/team_item'),
     templateHelpers: function () {
       var data = {};

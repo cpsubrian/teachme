@@ -1,6 +1,7 @@
 define(function (require) {
   var app = require('app')
     , Backbone = require('backbone')
+    , Handlebars = require('handlebars')
     , LayoutView = require('views/layout_view')
     , ChampionsCollection = require('collections/champions_collection');
 
@@ -8,6 +9,9 @@ define(function (require) {
   app.addRegions({
     'mainRegion': '#main'
   });
+
+  // Partials.
+  Handlebars.registerPartial('champion_icon', require('hbs!templates/champion_icon'));
 
   // Define api variables.
   app.api = {
@@ -27,7 +31,8 @@ define(function (require) {
     image.spriteUrl = app.api.spriteUrl(image.sprite);
     model.set('image', image);
   });
-  // This is a temp. hack to get the flex layout of the champions grid to work.
+  // This is a slightly hacky way to get the flex layout of the
+  // champions grid to behave expectedly for the last row of champs.
   app.champions.add([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]);
   app.teams = {
     friendly: new Backbone.Collection(require('data/team_friendly')),
