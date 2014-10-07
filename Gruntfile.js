@@ -8,8 +8,8 @@ module.exports = function (grunt) {
     },
 
     copy: {
-      // Bower files.
-      bower: {
+      // App files.
+      app: {
         files: [
           {src: 'bower_components/requirejs/require.js', dest: 'app/vendor/require.js'},
           {src: 'bower_components/requirejs-text/text.js', dest: 'app/vendor/text.js'},
@@ -22,6 +22,15 @@ module.exports = function (grunt) {
           {src: 'bower_components/marionette/lib/backbone.marionette.js', dest: 'app/vendor/backbone.marionette.js'},
           {src: 'bower_components/fontawesome/css/font-awesome.css', dest: 'app/vendor/fontawesome/css/font-awesome.css'},
           {expand: true, cwd: 'bower_components/fontawesome/fonts/', src: '**', dest: 'app/vendor/fontawesome/fonts/'},
+        ]
+      },
+      // Slides files.
+      slides: {
+        files: [
+          {expand: true, cwd: 'bower_components/reveal.js/css/', src: '**', dest: 'slides/css'},
+          {expand: true, cwd: 'bower_components/reveal.js/js/', src: '**', dest: 'slides/js'},
+          {expand: true, cwd: 'bower_components/reveal.js/lib/', src: '**', dest: 'slides/lib'},
+          {expand: true, cwd: 'bower_components/reveal.js/plugin/', src: '**', dest: 'slides/plugin'},
         ]
       }
     },
