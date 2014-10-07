@@ -5,6 +5,9 @@ define(function (require) {
     , LayoutView = require('views/layout_view')
     , ChampionsCollection = require('collections/champions_collection');
 
+  // Load inspection tooling.
+  require('inspect');
+
   // Define app regions.
   app.addRegions({
     'mainRegion': '#main'
@@ -55,25 +58,22 @@ define(function (require) {
     app.champions.findWhere({key: model.get('champion')}).set('locked', true);
   });
 
-  // Create the main layout view on app start.
-  app.addInitializer(function () {
-    app.mainRegion.show(new LayoutView());
-  });
-
   // Some AI to get us rolling.
   app.mainRegion.on('show', function (layout) {
     // Enemies will start picking random champions.
     var enemies = layout.teamEnemy.currentView;
     enemies.collection.where({picking: true}).forEach(function (player) {
-      var view = enemies.children.findByModel(player);
-      var picks = 0;
-      var pickTimeout;
-      var pick = function () {
+      var view = enemies.children.findByModel(player)
+        , picks = 0
+        , pickTimeout;
+
+      function pick () {
         pickTimeout = setTimeout(function () {
           view.pickRandomChampion();
           pick();
         }, Math.random() * 3000 + 1000);
-      };
+      }
+
       pick();
 
       // When someone gets impatient and chats, lock-in the champ.
@@ -89,6 +89,11 @@ define(function (require) {
       var playerView = layout.teamFriendly.currentView.children.findByModel(player);
       playerView.activate();
     });
+  });
+
+   // Create the main layout view on app start.
+  app.addInitializer(function () {
+    app.mainRegion.show(new LayoutView());
   });
 
   return app;

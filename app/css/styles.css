@@ -4,6 +4,7 @@ body {
   background: #000;
   color: #eee;
   font-size: 12px;
+  padding: 10px;
 }
 * {
   box-sizing: border-box;
@@ -338,10 +339,17 @@ body,
   transform: scale(0.5) translate(-50%, -50%);
 }
 
-/* Bans
+/* Chat
  ******************************************************************************/
 .chat {
   position: relative;
+}
+.chat .chat-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .chat ul {
   position: absolute;
@@ -379,4 +387,34 @@ body,
   right: 0;
   height: 2em;
 }
+
+
+/* Inspect Tooling
+ ******************************************************************************/
+.inspect-toggle {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  z-index: 9999;
+  text-decoration: none;
+  padding: 2px 10px;
+}
+.inspecting .inspect-view-layout {
+  outline: 1px solid pink;
+  outline-offset: 2px;
+}
+.inspecting .inspect-view-composite {
+  outline: 1px solid red;
+  outline-offset: 4px;
+}
+.inspecting .inspect-view-collection {
+  outline: 1px solid yellow;
+  outline-offset: 4px;
+}
+.inspecting .inspect-view-item {
+  outline: 1px solid green;
+  outline-offset: 2px;
+}
+
 
