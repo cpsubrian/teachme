@@ -31,14 +31,9 @@ define(function (require) {
       this.teamEnemy.show(new TeamView({
         collection: app.teams.enemy
       }));
-      this.status.show(new StatusView({
-
-      }));
+      this.status.show(new StatusView());
       this.champions.show(new ChampionsView({
         collection: app.champions
-      }));
-      this.playerOptions.show(new OptionsView({
-
       }));
       this.bansFriendly.show(new BansView({
         collection: app.bans.friendly
