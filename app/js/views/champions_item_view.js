@@ -4,6 +4,9 @@ define(function (require) {
 
   var ChampionsItemView = Marionette.ItemView.extend({
     tagName: 'li',
+    className: function () {
+      return this.model.get('locked') ? 'locked' : '';
+    },
     template: require('hbs!templates/champions_item')
   });
 

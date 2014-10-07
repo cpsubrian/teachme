@@ -31,9 +31,11 @@ define(function (require) {
     image.spriteUrl = app.api.spriteUrl(image.sprite);
     model.set('image', image);
   });
+
   // This is a slightly hacky way to get the flex layout of the
   // champions grid to behave expectedly for the last row of champs.
   app.champions.add([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]);
+
   app.teams = {
     friendly: new Backbone.Collection(require('data/team_friendly')),
     enemy: new Backbone.Collection(require('data/team_enemy'))
@@ -43,6 +45,14 @@ define(function (require) {
     enemy: new Backbone.Collection(require('data/bans_enemy'))
   };
   app.chats = new Backbone.Collection(require('data/chats'));
+
+  // Mark initially selected champions as selected.
+  app.teams.friendly.each(function (model) {
+    app.champions.findWhere({key: model.get('champion')}).set('locked', true);
+  });
+  app.teams.enemy.each(function (model) {
+    app.champions.findWhere({key: model.get('champion')}).set('locked', true);
+  });
 
   // Create the main layout view on app start.
   app.addInitializer(function () {
