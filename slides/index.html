@@ -42,102 +42,229 @@
           </p>
         </section>
 
-<section>
-  <h2>What is Marionette?</h2>
-</section>
-<section>
-  <h2>Backbone - The Good Parts</h2>
-</section>
-<section>
-  <h2>Some Vocabulary</h2>
-  <ul>
-    <li>Model</li>
-    <li>Collection</li>
-    <li>Application</li>
-    <li>Region/RegionManager</li>
-    <li>triggerMethod</li>
-  </ul>
-</section>
+        <section>
+          <h3>Demo Application</h3>
+          <img src="images/demo.jpg">
+        </section>
 
-<section>
-  <h2>All Views</h2>
-  <ul>
-    <li>Templates and Rendering Pipeline</li>
-    <li>Events: DOM/Model/Collection</li>
-    <li>UI: Convenient cached jquery bindings</li>
-    <li>Clean Up (Destroy)</li>
-  </ul>
-</section>
+        <section>
+          <h2>What is Marionette.js?</h2>
+          <img src="http://marionettejs.com/images/marionette_logo-4eeb07e5.png">
+        </section>
 
-<section>
-  <h2>LayoutView</h2>
-  <h3>Regions</h3>
-  <p>Show or Empty</p>
-  <p><small>*Can* orchestrate between views but be careful about encapsulation</small></p>
-</section>
+        <section>
+          <h3>Marionette.js</h3>
+          <blockquote>
+            "Backbone.Marionette is a composite application library for Backbone.js that aims to simplify the construction of large scale JavaScript applications.
+            <br /><br />
+            It is a collection of common design and implementation patterns ..."
+          </blockquote>
+        </section>
 
-<section>
-  <h2>CollectionView</h2>
-  <ul>
-  <li>Binds to a collection</li>
-  <li>Renders ItemView per model in the collection</li>
-  <li>Can do delegation (though Marionette.js isn’t as clean about this as it could be)</li>
-  <li>No Template</li>
-  <li>Example: Team</li>
-  </ul>
-</section>
+        <section>
+          <h2>Backbone.js - The Good Parts</h2>
+          <ul>
+            <li>Events</li>
+            <li>Models</li>
+            <li>Collections</li>
+            <li>Backbone.Sync</li>
+            <li>Router/History/PushState</li>
+          </ul>
+        </section>
 
-<section>
-  <h2>CompositeView</h2>
-  <p>
-    Like a CollectionView but has a template
-  </p>
-  <p>Example: Chat</p>
-</section>
+        <section>
+          <h2>Application Structure</h2>
+          <ul>
+            <li>Application
+              <ul>
+                <li>Initialization</li>
+                <li><code>app.vent</code></li>
+                <li>Store global state</li>
+              </ul>
+            </li>
+            <li>RegionManagers &amp; Regions</li>
+            <li>Controllers (lightweight)</li>
+          </ul>
+        </section>
 
-<section>
-  <h2>ItemView</h2>
-  <ul>
-    <li>Binds to a model (usually)</li>
-    <li>Show ChampionItem</li>
-  </ul>
-</section>
+        <section>
+          <h2>Views</h2>
+          <p>All Marionette.js Views inherit a basic set of functionality.</p>
+          <ul>
+            <li>Template Rendering Pipeline</li>
+            <li>Events: DOM/Model/Collection</li>
+            <li>UI: Convenient cached jquery bindings</li>
+            <li>Clean Up (Destroy)</li>
+            <li>triggerMethod()</li>
+          </ul>
+        </section>
 
-<section>
-  <h2>Conclusions</h2>
-</section>
+        <section>
+          <h3>Example: Main Layout View</h3>
+          <pre><code data-trim contenteditable>
+var LayoutView = Marionette.LayoutView.extend({
+  tagName: 'section',
+  className: 'layout',
+  template: require('hbs!templates/layout'),
 
-<section>
-  <h3>Pros</h3>
-  <ul>
-    <li>Vs. Backbone: Much more automatic management of view lifecycle (primarily via regions)</li>
-    <li>Template/Rendering pipeline</li>
-    <li>Patterns for more declarative code: UI, ModelEvents, CollectionEvents, etc.</li>
-    <li>Templates have a minimum of logic in them “separation of concerns”</li>
-    <li>Debuggable</li>
-</section>
+  regions: {
+    teamFriendly: '.team-friendly',
+    teamEnemy: '.team-enemy',
+    // ...
+    chat: '.chat .region'
+  },
 
-<section>
-  <h3>Cons</h3>
-  <ul>
-    <li>You must write more LOC</li>
-    <li>Many files (if you modularize views)</li>
-    <li>Every view instance must be associated with a single DOM element</li>
-    <li>Can lead to non-semantic DOM if you don’t take care</li>
-    <li>Many ways to handle cross-view communication .. no clear ‘best’ way</li>
-    <li>app.vent</li>
-    <li>layouts</li>
-    <li>model/collection events</li>
-  </ul>
-</section>
+  onRender: function () {
+    this.teamFriendly.show(new TeamView({
+      collection: app.teams.friendly
+    }));
+    // ...
+    this.chat.show(new ChatView({
+      collection: app.chats
+    }));
+  }
+});
+          </code></pre>
+        </section>
 
-<section>
-  <h3>Thanks!</h3>
-  <h1>Q&amp;A</h1>
-  <p>
-    <small>Slides and Demo available at: <a href="http://github.com/cpsubrian/teachme">http://github.com/cpsubrian/teachme</a></small>
-  </p>
-</section>
+        <section>
+          <h3>templates/layout.hbs</h3>
+          <pre><code data-trim contenteditable>
+&lt;div class=&quot;background-image&quot;&gt;&lt;/div&gt;
+&lt;section class=&quot;top&quot;&gt;
+  &lt;section class=&quot;team team-friendly region&quot;&gt;&lt;/section&gt;
+  &lt;section class=&quot;middle&quot;&gt;
+    &lt;section class=&quot;status region&quot;&gt;&lt;/section&gt;
+    &lt;section class=&quot;champions region&quot;&gt;&lt;/section&gt;
+    &lt;section class=&quot;player-options region&quot;&gt;&lt;/section&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;team team-enemy region&quot;&gt;&lt;/section&gt;
+&lt;/section&gt;
+&lt;section class=&quot;bottom&quot;&gt;
+  &lt;section class=&quot;bans bans-friendly box dark&quot;&gt;
+    &lt;h3&gt;Banned Champions&lt;/h3&gt;
+    &lt;div class=&quot;region&quot;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;chat box dark&quot;&gt;
+    &lt;h3&gt;Team Chat&lt;/h3&gt;
+    &lt;div class=&quot;region&quot;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;bans bans-enemy box dark&quot;&gt;
+    &lt;h3&gt;Banned Champions&lt;/h3&gt;
+    &lt;div class=&quot;region&quot;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+&lt;/section&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Collection View</h2>
+          <ul>
+            <li>Binds to a collection</li>
+            <li>Renders an ItemView for every model in the collection</li>
+            <li>If models are added/removed from collection, the view updates automatically!</li>
+            <li>No Template</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Example: Team View</h3>
+          <pre><code data-trim contenteditable>
+var TeamView = Marionette.CollectionView.extend({
+  className: 'players',
+  childView: require('views/team_item_view')
+});
+          </pre></code>
+        </section>
+
+        <section>
+          <img src="images/team.jpg">
+        </section>
+
+        <section>
+          <h2>Item View</h2>
+          <ul>
+            <li>Basic building block of a Marionette.js app</li>
+            <li>Binds to a model (optionally)</li>
+            <li>Handle DOM and Model Events</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Example: Champion Item View</h3>
+          <pre><code data-trim contenteditable>
+var ChampionsItemView = Marionette.ItemView.extend({
+  tagName: 'li',
+  className: function () {
+    return this.model.get('locked') ? 'locked' : '';
+  },
+  template: require('hbs!templates/champions_item'),
+  events: {
+    'click': 'onClick',
+  },
+  modelEvents: {
+    'change:locked': 'onChangeLocked'
+  },
+  onClick: function (e) {
+    e.preventDefault();
+    app.vent.trigger('champion:clicked', this.model);
+  }
+  onChangeLocked: function (model, locked) {
+    if (locked) {
+      this.$el.addClass('locked');
+    }
+    else {
+      this.$el.removeClass('locked');
+    }
+  }
+});
+          </pre></code>
+        </section>
+
+        <section>
+          <h2>Composite View</h2>
+          <p>
+            A CollectionView with a template. Useful if you need to render a
+            collection of items with some simple top-level interaction.
+          </p>
+          <img src="">
+        </section>
+
+        <section>
+          <h2>Conclusions</h2>
+        </section>
+
+        <section>
+          <h3>Pros</h3>
+          <ul>
+            <li>Vs. Backbone: Much more automatic management of view lifecycle (primarily via regions)</li>
+            <li>Template/Rendering pipeline</li>
+            <li>Patterns for more declarative code: UI, ModelEvents, CollectionEvents, etc.</li>
+            <li>Templates have a minimum of logic in them “separation of concerns”</li>
+            <li>Debuggable</li>
+        </section>
+
+        <section>
+          <h3>Cons</h3>
+          <ul>
+            <li>You must write more LOC</li>
+            <li>Many files (if you modularize views)</li>
+            <li>Every view instance must be associated with a single DOM element</li>
+            <li>Can lead to non-semantic DOM if you don’t take care</li>
+            <li>Many ways to handle cross-view communication .. no clear ‘best’ way</li>
+            <li>app.vent</li>
+            <li>layouts</li>
+            <li>model/collection events</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Thanks!</h3>
+          <h1>Q&amp;A</h1>
+          <p>
+            <small>Slides and Demo available at: <a href="http://github.com/cpsubrian/teachme">http://github.com/cpsubrian/teachme</a></small>
+          </p>
+        </section>
 
         <!-- SOME EXAMPLES -->
 
