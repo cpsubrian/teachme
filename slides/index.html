@@ -91,12 +91,25 @@
           <h2>Views</h2>
           <p>All Marionette.js Views inherit a basic set of functionality.</p>
           <ul>
-            <li>Template Rendering Pipeline</li>
+            <li>Template Rendering</li>
             <li>Events: DOM/Model/Collection</li>
             <li>UI: Convenient cached jquery bindings</li>
             <li>Clean Up (Destroy)</li>
             <li>triggerMethod()</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Layout View</h2>
+          <ul>
+            <li>Break a template into Regions</li>
+            <li>'Show' sub-views</li>
+            <li>Handle simple cross-view communication</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/layout.jpg">
         </section>
 
         <section>
@@ -158,6 +171,52 @@ var LayoutView = Marionette.LayoutView.extend({
         </section>
 
         <section>
+          <h2>Item View</h2>
+          <ul>
+            <li>Basic building block of a Marionette.js app</li>
+            <li>Binds to a model (optionally)</li>
+            <li>Handle DOM and Model Events</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Example: Champion Item View</h3>
+          <img src="images/champion.gif">
+        </section>
+
+        <section>
+          <pre><code data-trim contenteditable>
+var ChampionsItemView = Marionette.ItemView.extend({
+  tagName: 'li',
+  className: function () {
+    return this.model.get('locked') ? 'locked' : '';
+  },
+  template: require('hbs!templates/champions_item'),
+
+  events: {
+    'click': 'onClick',
+  },
+  modelEvents: {
+    'change:locked': 'onChangeLocked'
+  },
+
+  onClick: function (e) {
+    e.preventDefault();
+    app.vent.trigger('champion:clicked', this.model);
+  }
+  onChangeLocked: function (model, locked) {
+    if (locked) {
+      this.$el.addClass('locked');
+    }
+    else {
+      this.$el.removeClass('locked');
+    }
+  }
+});
+          </pre></code>
+        </section>
+
+        <section>
           <h2>Collection View</h2>
           <ul>
             <li>Binds to a collection</li>
@@ -182,52 +241,46 @@ var TeamView = Marionette.CollectionView.extend({
         </section>
 
         <section>
-          <h2>Item View</h2>
-          <ul>
-            <li>Basic building block of a Marionette.js app</li>
-            <li>Binds to a model (optionally)</li>
-            <li>Handle DOM and Model Events</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Example: Champion Item View</h3>
-          <pre><code data-trim contenteditable>
-var ChampionsItemView = Marionette.ItemView.extend({
-  tagName: 'li',
-  className: function () {
-    return this.model.get('locked') ? 'locked' : '';
-  },
-  template: require('hbs!templates/champions_item'),
-  events: {
-    'click': 'onClick',
-  },
-  modelEvents: {
-    'change:locked': 'onChangeLocked'
-  },
-  onClick: function (e) {
-    e.preventDefault();
-    app.vent.trigger('champion:clicked', this.model);
-  }
-  onChangeLocked: function (model, locked) {
-    if (locked) {
-      this.$el.addClass('locked');
-    }
-    else {
-      this.$el.removeClass('locked');
-    }
-  }
-});
-          </pre></code>
-        </section>
-
-        <section>
           <h2>Composite View</h2>
           <p>
             A CollectionView with a template. Useful if you need to render a
             collection of items with some simple top-level interaction.
           </p>
-          <img src="">
+          <img src="images/chat.jpg">
+        </section>
+
+        <section>
+          <h3>Example: Chat View</h3>
+          <pre><code data-trim contenteditable>
+var ChatView = Marionette.CompositeView.extend({
+  className: 'chat-wrapper',
+  template: require('hbs!templates/chat'),
+  childViewContainer: 'ul',
+  childView: require('views/chat_item_view'),
+
+  ui: {
+    list: 'ul',
+    input: 'input',
+    button: 'button'
+  },
+
+  events: {
+    'click @ui.button': 'onClickButton',
+  },
+
+  onClickButton: function (e) {
+    e.preventDefault();
+    if (this.ui.input.val()) {
+      this.collection.add({
+        name: 'Froggen',
+        msg: this.ui.input.val()
+      });
+      this.ui.input.val('');
+      this.children.last().el.scrollIntoView(false);
+    }
+  }
+});
+          </pre></code>
         </section>
 
         <section>
@@ -237,24 +290,20 @@ var ChampionsItemView = Marionette.ItemView.extend({
         <section>
           <h3>Pros</h3>
           <ul>
-            <li>Vs. Backbone: Much more automatic management of view lifecycle (primarily via regions)</li>
-            <li>Template/Rendering pipeline</li>
+            <li>Vs. Backbone: improved management of view lifecycle (primarily via regions)</li>
+            <li>Standardizes template rendering and DOM insertion</li>
             <li>Patterns for more declarative code: UI, ModelEvents, CollectionEvents, etc.</li>
-            <li>Templates have a minimum of logic in them “separation of concerns”</li>
-            <li>Debuggable</li>
+            <li>Separation of concerns: Templates have a minimum of logic in them</li>
+            <li>Debugging</li>
         </section>
 
         <section>
           <h3>Cons</h3>
           <ul>
-            <li>You must write more LOC</li>
-            <li>Many files (if you modularize views)</li>
+            <li>Lines of Code / # of Files</li>
             <li>Every view instance must be associated with a single DOM element</li>
-            <li>Can lead to non-semantic DOM if you don’t take care</li>
             <li>Many ways to handle cross-view communication .. no clear ‘best’ way</li>
-            <li>app.vent</li>
-            <li>layouts</li>
-            <li>model/collection events</li>
+            <li>No two-way data-binding (built-in)</li>
           </ul>
         </section>
 
@@ -264,53 +313,6 @@ var ChampionsItemView = Marionette.ItemView.extend({
           <p>
             <small>Slides and Demo available at: <a href="http://github.com/cpsubrian/teachme">http://github.com/cpsubrian/teachme</a></small>
           </p>
-        </section>
-
-        <!-- SOME EXAMPLES -->
-
-        <section data-markdown>
-          <script type="text/template">
-            ## Markdown support
-
-            For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-            ```
-            <section data-markdown>
-              ## Markdown support
-
-              For those of you who like that sort of thing.
-              Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-            </section>
-            ```
-          </script>
-        </section>
-
-        <section>
-          <h2>Pretty Code</h2>
-          <pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-          </code></pre>
-          <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-        </section>
-
-        <section>
-          <h2>Spectacular image!</h2>
-          <a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-            <img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-          </a>
         </section>
 
       </div> <!-- /slides -->
