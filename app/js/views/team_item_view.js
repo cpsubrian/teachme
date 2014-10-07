@@ -4,6 +4,7 @@ define(function (require) {
 
   var TeamItemView = Marionette.ItemView.extend({
     tagName: 'div',
+
     className: function () {
       var status = '';
       if (this.model.get('player')) {
@@ -19,6 +20,7 @@ define(function (require) {
       }
       return 'box player ' +  status;
     },
+
     template: require('hbs!templates/team_item'),
     templateHelpers: function () {
       var data = {};
